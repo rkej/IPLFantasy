@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.sprinbootdemo.SprinbootDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.741 s - in com.example.sprinbootdemo.SprinbootDemoApplicationTests
