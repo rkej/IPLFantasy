@@ -47,6 +47,7 @@ class NavBar extends Component {
                     '"Segoe UI Symbol"',
                 ].join(','),
 
+
                 '&:active': {
                     boxShadow: 'none',
                 },
@@ -56,9 +57,7 @@ class NavBar extends Component {
         const theme = createMuiTheme({
             palette: {
                 primary: {
-                    light: '#757ce8',
-                    main: '#4a148c',
-                    dark: '#001064',
+                    main: '#1a237e',
                     contrastText: '#fff',
                 },
                 secondary: {
@@ -67,6 +66,9 @@ class NavBar extends Component {
                     dark: '#bd7406',
                     contrastText: '#000',
                 },
+                background: {
+                    default: "#212121"
+                }
             },
         })
         const { classes } = this.props;

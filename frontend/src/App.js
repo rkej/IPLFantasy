@@ -1,34 +1,28 @@
-import React, {Component} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import { createMuiTheme } from '@material-ui/core/styles';
-import logo from './logo.svg';
+import React from 'react';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import NavBar from './NavBar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+const theme = createMuiTheme({
+  palette: {
+      primary: {
+          main: '#1a237e',
+          contrastText: '#fff',
+      },
+      secondary: {
+          light: '#ffd470',
+          main: '#f4a340',
+          dark: '#bd7406',
+          contrastText: '#000',
+      },
+      background: {
+          default: "#212121"
+      }
+  },
+})
 function App() {
-  return (
-    <div className="App">
-      <NavBar/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  {
+return(<div className="App"><MuiThemeProvider theme = {theme}><NavBar/><CssBaseline/></MuiThemeProvider></div>);}
+ 
 
+  }
 export default App;
