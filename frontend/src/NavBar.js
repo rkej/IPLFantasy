@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 import { ThemeProvider } from '@material-ui/styles';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import LoginIcon from '@material-ui/icons/AccountCircle';
 
 
 const styles = theme => ({
@@ -81,7 +82,7 @@ class NavBar extends Component {
                     <Typography variant="h6" className={classes.title}>
                         IPL Fantasy Web-App
           </Typography>
-                    <BootstrapButton varant = "extended" color="inherit" className={classes.menuButton} disableRipple><PersonOutlineIcon/>&nbsp;&nbsp;Login</BootstrapButton>
+                    <BootstrapButton varant = "extended" color="inherit" className={classes.menuButton} disableRipple><LoginIcon/>&nbsp;&nbsp;Login</BootstrapButton>
                     <BootstrapButton color="inherit" className={classes.menuButton} disableRipple><PersonAddIcon/>&nbsp;&nbsp;Register</BootstrapButton>
                 </Toolbar>
             </AppBar>
