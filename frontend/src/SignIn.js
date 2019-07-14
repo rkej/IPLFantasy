@@ -60,6 +60,7 @@ class SignIn extends Component {
 
                     <form className={classes.container}>
                         <TextField
+                        required
                             style={{backgroundColor: "white"}}
                             id="outlined-email-input"
                             label="Email"
@@ -72,6 +73,7 @@ class SignIn extends Component {
                             fullWidth="true"
                         />
                         <TextField
+                        required
                         style={{backgroundColor: "white"}}
                             id="outlined-password-input"
                             label="Password"
