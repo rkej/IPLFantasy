@@ -7,13 +7,13 @@ import SignIn from './SignIn';
 import Register from './Register'
 import * as serviceWorker from './serviceWorker';
 const routing = (
-<Router>
-<div>
-    <Route exact path = "/" component = {App}/>
-    <Route exact path = '/signin' component = {SignIn}/>
-    <Route exact path = '/register' component = {Register}/>
-      </div>
-      </Router>);
+  <Router>
+    <div>
+      <Route  path="/" exact = {true} component={App} />
+      <Route path='/signin' exact ={true} component={SignIn} />
+      <Route path='/register' exact ={true} component={Register} />
+    </div>
+  </Router>);
 
 ReactDOM.render(routing, document.getElementById('root'));
 
