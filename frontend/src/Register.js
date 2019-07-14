@@ -60,7 +60,7 @@ class Register extends Component {
 
                 <form className={classes.container}>
                     <TextField
-                    required
+                        required
                         style={{ backgroundColor: "white" }}
                         id="outlined-firstName-input"
                         label="First Name"
@@ -70,7 +70,7 @@ class Register extends Component {
                         variant="filled"
                     />
                     <TextField
-                    required
+                        required
                         style={{ backgroundColor: "white" }}
                         id="outlined-lastName-input"
                         label="Last Name"
@@ -80,8 +80,8 @@ class Register extends Component {
                         variant="filled"
                     />
                     <TextField
-                    required
-                        style={{ backgroundColor: "white"}}
+                        required
+                        style={{ backgroundColor: "white" }}
                         id="outlined-teamName-input"
                         label="Enter your Team Name"
                         className={classes.textField}
@@ -91,7 +91,7 @@ class Register extends Component {
                         fullWidth="true"
                     />
                     <TextField
-                    required
+                        required
                         style={{ backgroundColor: "white" }}
                         id="outlined-email-input"
                         label="Email"
@@ -104,7 +104,7 @@ class Register extends Component {
                         fullWidth="true"
                     />
                     <TextField
-                    required
+                        required
                         style={{ backgroundColor: "white" }}
                         id="outlined-password-input"
                         label="Password"

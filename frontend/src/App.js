@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import NavBar from './NavBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -20,14 +20,14 @@ const theme = createMuiTheme({
     }
   },
 })
-class App extends Component{
-  render(){
+class App extends Component {
+  render() {
     return <div>
-        <MuiThemeProvider theme={theme}>
-          <NavBar />
-    <CssBaseline />
-    </MuiThemeProvider>
+      <MuiThemeProvider theme={theme}>
+        <NavBar />
+        <CssBaseline />
+      </MuiThemeProvider>
     </div>
-}
+  }
 }
 export default App;
