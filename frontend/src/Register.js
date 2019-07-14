@@ -100,7 +100,7 @@ class Register extends Component {
                         fullWidth="true"
                     />
                     <TextField
-                        style={{ backgroundColor: "white", paddingRight: 10 }}
+                        style={{ backgroundColor: "white" }}
                         id="outlined-password-input"
                         label="Password"
                         className={classes.textField}
