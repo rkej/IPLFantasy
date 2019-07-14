@@ -79,7 +79,7 @@ class NavBar extends Component {
                     <Typography variant="h6" className={classes.title}>
                         IPL Fantasy Web-App
           </Typography>
-                    <BootstrapButton varant = "extended" color="inherit" className={classes.menuButton} href = "/signin"><Input/>&nbsp;&nbsp;Login</BootstrapButton>
+                    <BootstrapButton variant = "extended" color="inherit" className={classes.menuButton} href = "/signin"><Input/>&nbsp;&nbsp;Login</BootstrapButton>
                     <BootstrapButton color="inherit" className={classes.menuButton} href = "/register" ><PersonAddIcon/>&nbsp;&nbsp;Register</BootstrapButton>
                 </Toolbar>
             </AppBar>

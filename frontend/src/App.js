@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import NavBar from './NavBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import SignIn from './SignIn';
 
 const theme = createMuiTheme({
   palette: {
