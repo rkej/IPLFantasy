@@ -55,9 +55,9 @@ class SignIn extends Component {
     render() {
         const { classes } = this.props;
         return<div> <ThemeProvider theme={theme}>
-            <App/> <br></br><br></br> <Card className={classes.card} style={{width:'30%', verticalAlign: 'center', margin: 'auto', padding: 10, display:'block', backgroundColor: '#00838F', horizontalAlign: 'center'}}>
+            <App/> <br></br><br></br> <Card className={classes.card} style={{width:'30%', verticalAlign: 'center', margin: 'auto', padding: 10, display:'block', backgroundColor: '#ff6e40', horizontalAlign: 'center'}}>
                     <Typography variant="h5" component="h2" style={{color: "#1a237e", paddingLeft: 10}}>Sign In</Typography>
-                    
+
                     <form className={classes.container}>
                         <TextField
                             style={{backgroundColor: "white"}}
