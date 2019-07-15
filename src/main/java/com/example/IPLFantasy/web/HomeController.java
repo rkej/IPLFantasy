@@ -1,16 +1,14 @@
 package com.example.IPLFantasy.web;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@CrossOrigin(origins = "http://localhost:3000")
+@RestController
 public class HomeController {
-@ResponseBody
-    @RequestMapping(value="/")
+    @RequestMapping(value="/test")
     public String homePage() {
-        return "App.js";
+        return "App";
     }
 }
 

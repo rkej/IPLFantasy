@@ -18,7 +18,4 @@
       <module name="sprinboot-demo" options="-parameters" />
     </option>
   </component>
-  <component name="TypeScriptCompiler">
-    <option name="showAllErrors" value="true" />
-  </component>
 </project>
