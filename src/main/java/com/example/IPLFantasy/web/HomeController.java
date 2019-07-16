@@ -4,11 +4,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin(origins = "http://localhost:3000")
-@RestController
+@Controller
 public class HomeController {
-    @RequestMapping(value="/test")
-    public String homePage() {
-        return "App";
+    @GetMapping(value="/signin")
+    public void signinPage() {
     }
 }
 

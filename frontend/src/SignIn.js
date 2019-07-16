@@ -52,6 +52,9 @@ const theme = createMuiTheme({
 })
 
 class SignIn extends Component {
+    async componentDidMount() {
+        const response = await fetch('/signin');
+      }
     render() {
         const { classes } = this.props;
         return <div> <ThemeProvider theme={theme}>
