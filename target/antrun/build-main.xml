@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy todir="C:\Users\iamrk\code\target/classes/public">
-    <fileset dir="C:\Users\iamrk\code/frontend/build"/>
+  <copy todir="C:\Users\3793893\Documents\code\IPLFantasy\IPLFantasy\target/classes/public">
+    <fileset dir="C:\Users\3793893\Documents\code\IPLFantasy\IPLFantasy/frontend/build"/>
   </copy>
 </target>
 </project>
