@@ -58,8 +58,8 @@ class SignIn extends Component {
     render() {
         const { classes } = this.props;
         return <div> <ThemeProvider theme={theme}>
-            <App /> <br></br><br></br> <Card className={classes.card} style={{ width: '30%', verticalAlign: 'center', margin: 'auto', padding: 10, display: 'block', backgroundColor: '#5cdb95', horizontalAlign: 'center' }}>
-                <Typography variant="h5" component="h2" style={{ color: "#1a237e", paddingLeft: 10 }}>Sign In</Typography>
+            <App /> <br></br><br></br> <Card className={classes.card} style={{ width: '30%', verticalAlign: 'center', margin: 'auto', padding: 10, display: 'block', backgroundColor: '#D79922', horizontalAlign: 'center' }}>
+                <Typography variant="h5" component="h2" style={{ paddingLeft: 10 }}>Sign In</Typography>
 
                 <form className={classes.container}>
                     <TextField
@@ -87,7 +87,7 @@ class SignIn extends Component {
                         variant="filled"
                         fullWidth="true"
                     />
-                    <Button size="small" color="primary" style={{ paddingLeft: 10, margin: 'auto' }}>SIGN IN</Button>
+                    <Button size="small" style={{ paddingLeft: 10, margin: 'auto' }}>SIGN IN</Button>
                 </form>
             </Card>
         </ThemeProvider>

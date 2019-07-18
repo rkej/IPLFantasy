@@ -55,8 +55,8 @@ class Register extends Component {
     render() {
         const { classes } = this.props;
         return <div> <ThemeProvider theme={theme}>
-            <App /> <br></br><br></br> <Card className={classes.card} style={{ width: '40%', verticalAlign: 'center', margin: 'auto', padding: 10, display: 'block', backgroundColor: '#ff6e40', horizontalAlign: 'center' }}>
-                <Typography variant="h5" component="h2" style={{ color: "#1a237e", paddingLeft: 10 }}>Register</Typography>
+            <App /> <br></br><br></br> <Card className={classes.card} style={{ width: '40%', verticalAlign: 'center', margin: 'auto', padding: 10, display: 'block', backgroundColor: '#D79922', horizontalAlign: 'center' }}>
+                <Typography variant="h5" component="h2" style={{  paddingLeft: 10 }}>Register</Typography>
 
                 <form className={classes.container}>
                     <TextField
@@ -68,6 +68,7 @@ class Register extends Component {
                         name="firstName"
                         margin="normal"
                         variant="filled"
+                        fullWidth="true"
                     />
                     <TextField
                         required
@@ -78,6 +79,7 @@ class Register extends Component {
                         name="lastName"
                         margin="normal"
                         variant="filled"
+                        fullWidth="true"
                     />
                     <TextField
                         required
@@ -115,7 +117,7 @@ class Register extends Component {
                         variant="filled"
                         fullWidth="true"
                     />
-                    <Button style={{ paddingLeft: 10, margin: 'auto', color: '#1a237e' }}>Register</Button>
+                    <Button style={{ paddingLeft: 10, margin: 'auto' }}>Register</Button>
                 </form>
             </Card>
         </ThemeProvider>
@@ -126,4 +128,3 @@ Register.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 export default withStyles(styles)(Register);
-
