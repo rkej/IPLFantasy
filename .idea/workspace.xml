@@ -5,32 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e9e5c68-3d19-4914-8ffe-1be8a1afbd80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IPLFantasy.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IPLFantasy-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/IPLFantasy-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/IPLFantasy-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/IPLFantasy-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/antrun/build-main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/antrun/build-main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/precache-manifest.d65f5616b59a214fc58f9ed4215e2511.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/static/css/main.a112d91e.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/static/css/main.a112d91e.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/2.3194d2ae.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/public/static/js/2.3194d2ae.chunk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/main.f904ab87.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/main.f904ab87.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2019-07-18T12-08-24_030.dumpstream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.IPLFantasy.IPLFantasyApplicationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.IPLFantasy.IPLFantasyApplicationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.IPLFantasy.IPLFantasyApplicationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.IPLFantasy.IPLFantasyApplicationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IPLFantasy-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/IPLFantasy-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/antrun/build-main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/IPLFantasy/IPLFantasyApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/IPLFantasy/web/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/precache-manifest.b7afb4c045989abc0ac909811a2b0dbe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/css/main.b8d63abb.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/css/main.b8d63abb.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/2.3194d2ae.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/2.3194d2ae.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/main.56d6b5e0.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/main.56d6b5e0.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/runtime~main.a8a9905a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/public/static/js/runtime~main.a8a9905a.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.IPLFantasy.IPLFantasyApplicationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.IPLFantasy.IPLFantasyApplicationTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/IPLFantasy/IPLFantasyApplicationTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/frontend/node_modules/" />
@@ -46,11 +50,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="85">
+              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/SignIn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -72,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/IPLFantasy/IPLFantasyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="102">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -104,7 +117,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="442">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
@@ -158,7 +171,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="30" />
     <option name="y" value="60" />
     <option name="width" value="3780" />
@@ -170,7 +183,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,6 +194,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,6 +372,7 @@
       <workItem from="1563159330842" duration="1052000" />
       <workItem from="1563161279193" duration="1230000" />
       <workItem from="1563241643649" duration="8185000" />
+      <workItem from="1563555727643" duration="1408000" />
     </task>
     <servers />
   </component>
@@ -374,13 +388,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23559000" />
+    <option name="totallyTimeSpent" value="24967000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
+    <frame x="-6" y="-6" width="1292" height="692" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.262945" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49834985" visible="true" weight="0.2669903" />
+      <window_info id="Structure" order="1" sideWeight="0.50165015" side_tool="true" visible="true" weight="0.2669903" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -485,27 +500,10 @@
     <entry file="file://$PROJECT_DIR$/frontend/build/static/css/main.b8d63abb.chunk.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1933" selection-start-column="1933" selection-end-column="1933" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/IPLFantasy/IPLFantasyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -525,6 +523,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/IPLFantasy/IPLFantasyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/IPLFantasy/web/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -538,17 +563,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/frontend/public/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/frontend/src/SignIn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="25">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
