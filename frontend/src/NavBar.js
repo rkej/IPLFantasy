@@ -1,95 +1,51 @@
 import React, { Component } from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import { createMuiTheme } from '@material-ui/core/styles';
-import PropTypes from 'prop-types';
-import { ThemeProvider } from '@material-ui/styles';
-import PersonAddIcon from '@material-ui/icons/PersonAdd';
-import Input from '@material-ui/icons/Input';
-import { Link } from '@material-ui/core';
+import {
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink,
+    UncontrolledDropdown,
+    DropdownToggle,
+    DropdownMenu,
+    DropdownItem } from 'reactstrap';
+import MaterialIcon, {colorPalette} from 'material-icons-react';
 
-
-const styles = theme => ({
-    root: {
-        flexGrow: 1,
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
-    title: {
-        flexGrow: 1,
-    },
-});
-
-class NavBar extends Component {
+export default class NavBar extends React.Component {
+    constructor(props) {
+        super(props);
+    
+        this.toggle = this.toggle.bind(this);
+        this.state = {
+          isOpen: false
+        };
+      }
+      toggle() {
+        this.setState({
+          isOpen: !this.state.isOpen
+        });
+      }
 
     render() {
-        const BootstrapButton = withStyles({
-            root: {
-                boxShadow: 'none',
-                textTransform: 'none',
-                fontSize: 16,
-                lineHeight: 1.5,
-                fontFamily: [
-                    '-apple-system',
-                    'BlinkMacSystemFont',
-                    '"Segoe UI"',
-                    'Roboto',
-                    '"Helvetica Neue"',
-                    'Arial',
-                    'sans-serif',
-                    '"Apple Color Emoji"',
-                    '"Segoe UI Emoji"',
-                    '"Segoe UI Symbol"',
-                ].join(','),
-                '&:active': {
-                    boxShadow: 'none',
-                },
-
-            },
-        })(Button);
-        const theme = createMuiTheme({
-            palette: {
-                primary: {
-                    main: '#19388a',
-                    contrastText: '#fff',
-                },
-                secondary: {
-                    light: '#ffd470',
-                    main: '#f4a340',
-                    dark: '#bd7406',
-                    contrastText: '#000',
-                },
-                background: {
-                    default: "#212121"
-                }
-            },
-        })
         const { classes } = this.props;
-        return <ThemeProvider theme={theme}> <div className={classes.root}>
-            <AppBar position="static">
-                <Toolbar>
-                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="Menu">
-                        <MenuIcon />
-                    </IconButton>
-                    <Typography variant="h6" className={classes.title}>
-                        IPL Fantasy Web-App
-          </Typography>
-                    <BootstrapButton variant="extended" color="inherit" className={classes.menuButton} href="/signin"><Input />&nbsp;&nbsp;Login</BootstrapButton>
-                    <BootstrapButton color="inherit" className={classes.menuButton} href="/register" ><PersonAddIcon />&nbsp;&nbsp;Register</BootstrapButton>
-                </Toolbar>
-            </AppBar>
-        </div>
-        </ThemeProvider>
+        return <div> <Navbar color="primary" dark expand ="md">
+            <NavbarBrand href = "/">CricFantasy</NavbarBrand>
+            <NavbarToggler onClick={this.toggle}/>
+            <Collapse isOpen={this.state.isOpen} navbar>
+                <Nav className = "ml-auto" navbar>
+                    <NavItem>
+                        <NavLink href = "/signin">Login</NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink href = "/register">Register</NavLink>
+                    </NavItem>
+                </Nav>
+            </Collapse>
+                 </Navbar>   
+            </div>
     }
 }
-NavBar.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
-export default withStyles(styles)(NavBar);
 
+ 

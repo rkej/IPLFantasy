@@ -6,6 +6,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import SignIn from './SignIn';
 import Register from './Register'
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 const routing = (
   <Router>
     <div>
