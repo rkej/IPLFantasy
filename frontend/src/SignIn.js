@@ -17,19 +17,18 @@ export default class SignIn extends Component {
                             <FormGroup row>
                                 <Label for="email" sm={2}>Email</Label>
                                 <Col sm={10}>
-                                    <Input type="email" name="email" id="email" />
+                                    <Input type="email" name="email" id="email" required/>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Label for="password" sm={2}>Password</Label>
                                 <Col sm={10}>
-                                    <Input type="password" name="password" id="password" />
+                                    <Input type="password" name="password" id="password" required/>
                                 </Col>
                             </FormGroup>
                             <Button color="primary" style={{ verticalAlign: 'center', margin: 'auto', padding: 10, display: 'block', horizontalAlign: 'center'}}>Sign in</Button>
                         </Form>
                     </CardBody>
-                    
                 </Card>
                 </div>
     }
