@@ -53,11 +53,11 @@ export default class SignIn extends Component {
                     <Form>
                         <FormGroup>
                             <Label for="email" >Email</Label>
-                            <Input style={{ width: "100%" }} type="email" name="email" id="email" value={this.state.email} required />
+                            <Input onChange={this.handleInputChange} style={{ width: "100%" }} type="email" name="email" id="email" value={this.state.email} required />
                         </FormGroup>
                         <FormGroup>
                             <Label for="password" >Password</Label>
-                            <Input style={{ width: "100%" }} type="password" name="password" id="password" value={this.state.email} required />
+                            <Input onChange={this.handleInputChange} style={{ width: "100%" }} type="password" name="password" id="password" value={this.state.email} required />
                         </FormGroup>
                         <Button color="primary" style={{
                             verticalAlign: 'center',
