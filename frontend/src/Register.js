@@ -9,50 +9,41 @@ export default class SignIn extends Component {
 
     render() {
         return <div><App/>
-            <br/><br/>
+            <br/>
             <Card style={{
-                width: "30%",
+                width: "40%",
                 verticalAlign: 'center',
                 margin: 'auto',
                 padding: 5,
                 display: 'block',
-                backgroundColor: '#FF8A80',
+                backgroundColor: '#FFAB91',
                 horizontalAlign: 'center'
             }}>
-                <strong>
-                    <CardHeader>Register</CardHeader>
-                </strong>
+                
+                    <CardHeader><strong>Register</strong></CardHeader>
+                
                 <CardBody>
-                    <Form style={{width: "120%"}}>
-                        <FormGroup row>
-                            <Label for="f_name" sm={5}>First Name</Label>
-                            <Col sm={10}>
-                                <Input type="text" name="f_name" id="f_name" required/>
-                            </Col>
+                    <Form>
+                        <FormGroup>
+                            <Label for="firstName">First Name</Label>
+                                <Input style={{width: "100%"}} type="text" name="firstName" id="firstName" required/>
                         </FormGroup>
-                        <FormGroup row>
-                            <Label for="l_name" sm={5}>Last Name</Label>
-                            <Col sm={10}>
-                                <Input type="text" name="l_name" id="l_name" required/>
-                            </Col>
+                        <FormGroup>
+                            <Label for="lastName" >Last Name</Label>
+                                <Input style={{width: "100%"}} type="text" name="lastName" id="lastName" required/>
+ 
                         </FormGroup>
-                        <FormGroup row>
-                            <Label for="t_name" sm={5}>Team Name</Label>
-                            <Col sm={10}>
-                                <Input type="text" name="t_name" id="t_name" required/>
-                            </Col>
+                        <FormGroup>
+                            <Label for="teamName" >Team Name</Label>
+                                <Input style={{width: "100%"}} type="text" name="teamName" id="teamName" required/>
                         </FormGroup>
-                        <FormGroup row>
-                            <Label for="email" sm={5}>Email</Label>
-                            <Col sm={10}>
-                                <Input type="email" name="email" id="email" required/>
-                            </Col>
+                        <FormGroup>
+                            <Label for="email" >Email</Label>
+                                <Input style={{width: "100%"}} type="email" name="email" id="email" required/>
                         </FormGroup>
-                        <FormGroup row>
-                            <Label for="password" sm={5}>Password</Label>
-                            <Col sm={10}>
-                                <Input type="password" name="password" id="password" required/>
-                            </Col>
+                        <FormGroup>
+                            <Label for="password" >Password</Label>
+                                <Input style={{width: "100%"}} type="password" name="password" id="password" required/>
                         </FormGroup>
                         <Button color="primary" style={{
                             verticalAlign: 'center',
@@ -60,7 +51,7 @@ export default class SignIn extends Component {
                             padding: 10,
                             display: 'block',
                             horizontalAlign: 'center'
-                        }}>Sign in</Button>
+                        }}>Register</Button>
                     </Form>
                 </CardBody>
             </Card>
