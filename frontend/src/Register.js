@@ -28,7 +28,7 @@ export default class SignIn extends Component {
         });
     }
 
-    onFormSubmit=event=>{
+    onFormSubmit = event => {
         event.preventDefault();
         axios.post('/api/register', null, {
             params: {
@@ -59,7 +59,7 @@ export default class SignIn extends Component {
                     <Form>
                         <FormGroup>
                             <Label for="firstName">First Name</Label>
-                            <Input onChange={this.handleInputChange} style={{ width: "100%" }} type="text" name="firstName" id="firstName" value={this.state.firstName} required/>
+                            <Input onChange={this.handleInputChange} style={{ width: "100%" }} type="text" name="firstName" id="firstName" value={this.state.firstName} required />
                         </FormGroup>
 
                         <FormGroup>
@@ -88,8 +88,7 @@ export default class SignIn extends Component {
                         padding: 10,
                         display: 'block',
                         horizontalAlign: 'center'
-                    }} type="submit" onClick={this.onFormSubmit}>Register</Button>
-
+                    }}>Register</Button>
                 </CardBody>
             </Card>
         </div>
