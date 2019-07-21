@@ -20,7 +20,7 @@ export default class SignIn extends Component {
                 horizontalAlign: 'center'
             }}>
                 
-                    <CardHeader><strong>Register</strong></CardHeader>
+                    <CardHeader style={{backgroundColor: '#FF1744', color: 'white'}}><strong>Register</strong></CardHeader>
                 
                 <CardBody>
                     <Form>

@@ -19,7 +19,7 @@ export default class SignIn extends Component {
                 backgroundColor: '#FFAB91',
                 horizontalAlign: 'center'
             }}>
-                    <CardHeader><strong>Sign in</strong></CardHeader>
+                    <CardHeader style={{backgroundColor: '#FF1744', color: 'white'}}><strong>Sign in</strong></CardHeader>
                 
                 <CardBody>
                     <Form>
