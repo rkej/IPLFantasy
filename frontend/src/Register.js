@@ -30,14 +30,25 @@ export default class SignIn extends Component {
 
     onFormSubmit=event=>{
         event.preventDefault();
-        var user = new URLSearchParams();
-        user.append('email', this.state.email);
-        user.append('password', this.state.password);
-        user.append('firstName', this.state.firstName);
-        user.append('lastName', this.state.lastName)
-        user.append('teamName', this.state.teamName);
-        axios.post('/api/register', user)
+        if((this.state.email=='')|(this.state.password=='')|(this.state.firstName=='')|(this.state.lastName=='')|(this.state.teamName='')){
+            alert('Please check your input fields');
+        }
+        else{
+        axios.post('/api/register', null, {
+            params: {
+                email: this.state.email,
+                password: this.state.password,
+                firstName: this.state.firstName,
+                lastName: this.state.lastName,
+                teamName: this.state.teamName
+            }
+        })
+        .then(response=>{
+            alert(response.data);
+        }
+        )
     }
+}
     render() {
         return <div><App />
             <br />
