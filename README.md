@@ -2,8 +2,8 @@
 Fantasy App for Indian Premier League. 
 **Mainly for people new to Spring and React**
 * Tech stack: Framework - Spring boot with Maven build \n
-            * Backend - Java
-            * Frontend - React.js
+* Backend - Java
+* Frontend - React.js
 ## Please follow the following guidelines to develop further on this project:
 1. Clone this repo(Obviously!)
 2. Download IntelliJ Ultimate(since we're using it as an IDE. 
