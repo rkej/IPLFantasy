@@ -51,4 +51,11 @@ public class UserDto{
     public void setPassword(final String password) {
         this.password = password;
     }
+    public UserDto(String firstName, String lastName, String teamName, String email, String password){
+        this.firstName=firstName;
+        this.lastName=lastName;
+        this.teamName=teamName;
+        this.email=email;
+        this.password=password;
+    }
 }

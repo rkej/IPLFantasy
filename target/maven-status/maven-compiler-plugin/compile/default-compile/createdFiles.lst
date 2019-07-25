@@ -1,0 +1,4 @@
+com\example\IPLFantasy\web\controllers\HomeController.class
+com\example\IPLFantasy\IPLFantasyApplication.class
+com\example\IPLFantasy\web\controllers\RegistrationController.class
+com\example\IPLFantasy\web\dto\UserDto.class
