@@ -30,6 +30,10 @@ export default class SignIn extends Component {
 
     onFormSubmit=event=>{
         event.preventDefault();
+        if((this.state.email=='')|(this.state.password=='')|(this.state.firstName=='')|(this.state.lastName=='')|(this.state.teamName='')){
+            alert('Please check your input fields');
+        }
+        else{
         axios.post('/api/register', null, {
             params: {
                 email: this.state.email,
@@ -39,7 +43,12 @@ export default class SignIn extends Component {
                 teamName: this.state.teamName
             }
         })
+        .then(response=>{
+            alert(response.data);
+        }
+        )
     }
+}
     render() {
         return <div><App />
             <br />
