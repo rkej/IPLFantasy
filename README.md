@@ -1,5 +1,5 @@
 # IPLFantasy
-Fantasy App for Indian Premier League. 
+Fantasy App for Indian Premier League. The project is in it's very initial stages of development currently. 
 <br> **Mainly for people new to Spring and React**
 <br> Tech stack: Framework - Spring boot with Maven build 
 <br> Backend - Java
