@@ -27,6 +27,10 @@ export default class SignIn extends Component {
 
     onFormSubmit = event => {
         event.preventDefault();
+        if((this.state.email=='')|(this.state.password=='')){
+            alert('Please check your input fields');
+        }
+        else{
         axios.post('/api/signin', null, {
             params: {
                 email: this.state.email,
@@ -34,6 +38,7 @@ export default class SignIn extends Component {
             }
         })
     }
+}
 
     render() {
         return <div><App />
