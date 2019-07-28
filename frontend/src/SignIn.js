@@ -27,7 +27,7 @@ export default class SignIn extends Component {
 
     onFormSubmit = event => {
         event.preventDefault();
-        if((this.state.email=='')|(this.state.password=='')|(this.state.firstName=='')|(this.state.lastName=='')|(this.state.teamName='')){
+        if((this.state.email=='')|(this.state.password=='')){
             alert('Please check your input fields');
         }
         else{

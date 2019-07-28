@@ -30,7 +30,7 @@ export default class SignIn extends Component {
 
     onFormSubmit=event=>{
         event.preventDefault();
-        if((this.state.email=='')|(this.state.password=='')|(this.state.firstName=='')|(this.state.lastName=='')|(this.state.teamName='')){
+        if((this.state.email=='')|(this.state.password=='')|(this.state.firstName=='')|(this.state.lastName=='')|(this.state.teamName=='')){
             alert('Please check your input fields');
         }
         else{
@@ -90,7 +90,6 @@ export default class SignIn extends Component {
                             <Label for="password" >Password</Label>
                             <Input onChange={this.handleInputChange} style={{ width: "100%" }} type="password" name="password" id="password" value={this.state.password} required />
                         </FormGroup>
-                    </Form>
                     <Button color="primary" style={{
                         verticalAlign: 'center',
                         margin: 'auto',
@@ -98,6 +97,8 @@ export default class SignIn extends Component {
                         display: 'block',
                         horizontalAlign: 'center'
                     }} type="submit" onClick={this.onFormSubmit}>Register</Button>
+                                        </Form>
+
 
                 </CardBody>
             </Card>
