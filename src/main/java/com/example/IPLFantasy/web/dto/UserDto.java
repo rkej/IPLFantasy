@@ -1,9 +1,18 @@
 package com.example.IPLFantasy.web.dto;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+@Entity
 public class UserDto{
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
+
     @NotNull
     @NotEmpty
     private String firstName;
@@ -19,7 +28,12 @@ public class UserDto{
     @NotNull
     @NotEmpty
     private String email;
-
+    public String getEmail(){
+        return email;
+    }
+    public void setEmail(final String email){
+        this.email = email;
+    }
     public String getFirstName() {
         return firstName;
     }
@@ -42,6 +56,14 @@ public class UserDto{
 
     public void setTeamName(final String teamName){
         this.teamName = teamName;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getPassword() {
