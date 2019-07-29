@@ -1,9 +1,10 @@
 # IPLFantasy
 Fantasy App for Indian Premier League. The project is in it's very initial stages of development currently. 
 <br> **Mainly for people new to Spring and React**
-<br> Tech stack: Framework - Spring boot with Maven build 
+<br> **Tech stack:** 
+<br> Framework - Spring boot with Maven build 
 <br> Backend - Java
-<br>  Frontend - React.js
+<br> Frontend - React.js
 <br> Database Server - MySQL
 ## Please follow the following guidelines to develop further on this project:
 1. Clone this repo(Obviously!)
@@ -18,4 +19,3 @@ Fantasy App for Indian Premier League. The project is in it's very initial stage
 2. Update the pom.xml to have `<dependency> <groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-data-jpa</artifactId></dependency><dependency><groupId>mysql</groupId><artifactId>mysql-connector-java</artifactId></dependency><dependency>` (You won't need to do this if you're cloning/pulling from this repo) 
 3. **MANDATORY** Create a database on mysql using the following steps: `mysql -u root -p`, then enter your password and execute `create database iplfantasy_db`. 
 4. For the rest, if you have pulled/cloned the most recent version of the project, you're good to go!
-
