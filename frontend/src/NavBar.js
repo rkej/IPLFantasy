@@ -6,12 +6,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem } from 'reactstrap';
-import MaterialIcon, {colorPalette} from 'material-icons-react';
+    NavLink } from 'reactstrap';
 
 export default class NavBar extends React.Component {
     constructor(props) {
@@ -30,7 +25,7 @@ export default class NavBar extends React.Component {
 
     render() {
         const { classes } = this.props;
-        return <div> <Navbar color="primary" dark expand ="md">
+        return <div> <Navbar style = {{backgroundColor: "#7F3F98"}} dark expand ="md">
             <NavbarBrand href = "/">CricFantasy</NavbarBrand>
             <NavbarToggler onClick={this.toggle}/>
             <Collapse isOpen={this.state.isOpen} navbar>

@@ -37,6 +37,10 @@ export default class SignIn extends Component {
                 password: this.state.password,
             }
         })
+        .then(response=>{
+            alert(response.data);
+        }
+        )
     }
 }
 
@@ -49,28 +53,29 @@ export default class SignIn extends Component {
                 margin: 'auto',
                 padding: 5,
                 display: 'block',
-                backgroundColor: '#FFAB91',
+                backgroundColor: '#2E353B',
                 horizontalAlign: 'center'
             }}>
-                <CardHeader style={{ backgroundColor: '#FF1744', color: 'white' }}><strong>Sign in</strong></CardHeader>
+                <CardHeader style={{ backgroundColor: '#CD853F', color: 'white' }}><strong>Sign in</strong></CardHeader>
 
                 <CardBody>
                     <Form>
                         <FormGroup>
-                            <Label for="email" >Email</Label>
+                            <Label for="email" style={{color: 'white'}}>Email</Label>
                             <Input onChange={this.handleInputChange} style={{ width: "100%" }} type="email" name="email" id="email" value={this.state.email} required />
                         </FormGroup>
                         <FormGroup>
-                            <Label for="password" >Password</Label>
+                            <Label for="password" style={{color: 'white'}} >Password</Label>
                             <Input onChange={this.handleInputChange} style={{ width: "100%" }} type="password" name="password" id="password" value={this.state.password} required />
                         </FormGroup>
-                        <Button color="primary" style={{
-                            verticalAlign: 'center',
-                            margin: 'auto',
-                            padding: 10,
-                            display: 'block',
-                            horizontalAlign: 'center'
-                        }} onClick={this.onFormSubmit}>Sign in</Button>
+                        <Button style={{
+                        verticalAlign: 'center',
+                        margin: 'auto',
+                        padding: 10,
+                        display: 'block',
+                        horizontalAlign: 'center', 
+                        backgroundColor: "#7F3F98"
+                    }} type="submit" onClick={this.onFormSubmit}>Sign in</Button>
                     </Form>
                 </CardBody>
             </Card>
