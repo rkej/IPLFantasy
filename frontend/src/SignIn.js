@@ -5,13 +5,14 @@ import {
 } from 'reactstrap';
 import App from './App';
 import axios from 'axios';
+import { Redirect } from 'react-router';
 
 export default class SignIn extends Component {
     constructor(props) {
         super(props);
         this.state = {
             email: '',
-            password: '',
+            password: ''
         };
         this.handleInputChange = this.handleInputChange.bind(this);
     }
@@ -37,8 +38,12 @@ export default class SignIn extends Component {
                 password: this.state.password,
             }
         })
+        .catch((err)=>{
+            alert(err)
+        })
         .then(response=>{
-            alert(response.data);
+            this.props.history.push(`home?${this.state.email}`);
+                
         }
         )
     }

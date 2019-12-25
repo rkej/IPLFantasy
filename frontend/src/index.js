@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Home from './Home';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import SignIn from './SignIn';
 import Register from './Register'
@@ -13,6 +14,7 @@ const routing = (
       <Route  path="/" exact = {true} component={App} />
       <Route path='/signin' exact ={true} component={SignIn} />
       <Route path='/register' exact ={true} component={Register} />
+      <Route path='/home' exact ={false} component={Home} />
     </div>
   </Router>);
 

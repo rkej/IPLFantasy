@@ -1,6 +1,5 @@
 package com.example.IPLFantasy.web.controllers;
 
-import com.example.IPLFantasy.web.dto.LoginDto;
 import com.example.IPLFantasy.web.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
@@ -26,7 +25,7 @@ public class LoginController{
             return new ResponseEntity<>("Successful log in!", HttpStatus.OK);
         }
         else{
-            return new ResponseEntity<>( "Login Failed", HttpStatus.OK );
+            return new ResponseEntity<>( "Login Failed", HttpStatus.NOT_FOUND );
         }
 
     }
