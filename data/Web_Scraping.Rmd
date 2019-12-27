@@ -1,0 +1,206 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+```{r}
+library(DataComputing)
+library(tidyverse)
+library(tidyr)
+library(mosaic)
+library(rvest)
+library(lubridate)
+library(data.table)
+```
+```{r}
+page <- "https://en.wikipedia.org/wiki/Chennai_Super_Kings_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[3] 
+FD <- read.csv("CSK.csv")
+
+FD
+write.csv(FD, file = "CSK_final.csv")
+```
+```{r}
+page <- "https://en.wikipedia.org/wiki/Delhi_Capitals_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[3] 
+write.csv(FilteredData, file = "DD.csv")
+FD <- read.csv("DD.csv")
+
+
+write.csv(FD, file = "DD.csv")
+FD
+```
+```{r}
+page <- "https://en.wikipedia.org/wiki/Kings_XI_Punjab_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[3] 
+write.csv(FilteredData, file = "KXIP.csv")
+FD <- read.csv("DD.csv")
+
+
+write.csv(FD, file = "KXIP.csv")
+FD
+```
+```{r}
+page <- "https://en.wikipedia.org/wiki/Rajasthan_Royals_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[3] 
+write.csv(FilteredData, file = "RR.csv")
+FD <- read.csv("RR.csv")
+
+  
+
+write.csv(FD, file = "RR.csv")
+FD
+```
+```{r}
+page <- "https://en.wikipedia.org/wiki/Kolkata_Knight_Riders_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[3] 
+write.csv(FilteredData, file = "KKR.csv")
+FD <- read.csv("KKR.csv")
+
+
+write.csv(FD, file = "KKR.csv")
+FD
+```
+```{r}
+page <- "https://en.wikipedia.org/wiki/Royal_Challengers_Bangalore_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[3] 
+write.csv(FilteredData, file = "RCB.csv")
+FD <- read.csv("RCB.csv")
+
+  
+
+write.csv(FD, file = "RCB.csv")
+FD
+```
+```{r}
+page <- "https://en.wikipedia.org/wiki/Sunrisers_Hyderabad_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[4] 
+write.csv(FilteredData, file = "SRH.csv")
+FD <- read.csv("SRH.csv")
+
+  
+
+write.csv(FD, file = "SRH.csv")
+FD
+```
+
+```{r}
+page <- "https://en.wikipedia.org/wiki/Mumbai_Indians_in_2020"
+tableList <- page %>%
+  read_html() %>%
+  html_nodes(css = "table") %>%
+  html_table(fill = TRUE) 
+
+FilteredData <- tableList[3] 
+write.csv(FilteredData, file = "MI.csv")
+FD <- read.csv("MI.csv")
+
+
+write.csv(FD, file = "MI.csv")
+FD
+```
+```{r}
+CSK <- read.csv("CSK_final.csv")
+MI <- read.csv("MI.csv")
+KXIP <- read.csv("KXIP.csv")
+KKR <- read.csv("KKR.csv")
+DC <- read.csv("DD.csv")
+RCB <- read.csv("RCB.csv")
+RR <- read.csv("RR.csv")
+SRH <- read.csv("SRH.csv")
+CSK <- CSK %>%
+  mutate(team = "CSK") %>%
+  select(Name, Notesvte, team)
+DC <- DC %>%
+  mutate(team = "DC") %>%
+  select(Name, Notesvte, team)
+KKR <- KKR %>%
+  mutate(team = "KKR") %>%
+  select(Name, Notesvte, team)
+KXIP <- KXIP %>%
+  mutate(team = "KXIP") %>%
+  select(Name, Notesvte, team)
+RR <- RR %>%
+  mutate(team = "RR") %>%
+  select(Name, Notesvte, team)
+RCB <- RCB %>%
+  mutate(team = "RCB") %>%
+  select(Name, Notesvte, team)
+MI <- MI %>%
+  mutate(team = "MI") %>%
+  select(Name, Notesvte, team)
+SRH <- SRH %>%
+  mutate(team = "SRH") %>%
+  select(Name, Notes, team)
+
+
+setnames(CSK, "Notesvte", "Notes")
+setnames(MI, "Notesvte", "Notes")
+setnames(DC, "Notesvte", "Notes")
+setnames(KKR, "Notesvte", "Notes")
+setnames(KXIP, "Notesvte", "Notes")
+setnames(RR, "Notesvte", "Notes")
+setnames(RCB, "Notesvte", "Notes")
+
+IPL <- rbind(CSK, MI, DC, SRH, KXIP, RR, RCB, KKR)
+IPL <- IPL %>%
+  mutate(type = "")
+write.csv(IPL, file = "IPL_final.csv")
+```
+
+```{r}
+IPL <- read.csv("IPL0.csv")
+IPL <- IPL%>%
+  filter(Name != "Batsmen") %>%
+  filter(Name!= "All-rounders") %>%
+  filter(Name != "Wicket-keepers") %>%
+  filter(Name != "Bowlers")
+write.csv(IPL, file = "Players.csv")
+```
+```{r}
+CSK <- read.csv("CSK_final.csv")
+CSK
+```
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
