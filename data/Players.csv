@@ -1,187 +1,187 @@
-"","X","Name","Notes","team","type"
-"1",1,"Murali Vijay","","CSK","Batsman"
-"2",2,"Suresh Raina","Vice-captain","CSK","Batsman"
-"3",3,"Ambati Rayudu","","CSK","Batsman"
-"4",4,"Faf du Plessis","Overseas","CSK","Batsman"
-"5",5,"Kedar Jadhav","","CSK","Batsman"
-"6",6,"Ruturaj Gaikwad","","CSK","Batsman"
-"7",8,"Ravindra Jadeja","","CSK","All-Rounder"
-"8",9,"Shane Watson","Overseas","CSK","All-Rounder"
-"9",10,"Karn Sharma","","CSK","All-Rounder"
-"10",11,"Dwayne Bravo","Overseas","CSK","All-Rounder"
-"11",12,"Mitchell Santner","Overseas","CSK","All-Rounder"
-"12",13,"Sam Curran","Overseas","CSK","All-Rounder"
-"13",15,"MS Dhoni","Captain","CSK","Wicket Keeper"
-"14",16,"Narayan Jagadeesan","","CSK","Wicket Keeper"
-"15",18,"Lungi Ngidi","Overseas","CSK","Bowler"
-"16",19,"Monu Kumar","","CSK","Bowler"
-"17",20,"KM Asif","","CSK","Bowler"
-"18",21,"Harbhajan Singh","","CSK","Bowler"
-"19",22,"Shardul Thakur","","CSK","Bowler"
-"20",23,"Deepak Chahar","","CSK","Bowler"
-"21",24,"Imran Tahir","Overseas","CSK","Bowler"
-"22",25,"Piyush Chawla","","CSK","Bowler"
-"23",26,"Josh Hazlewood","Overseas","CSK","Bowler"
-"24",27,"R Sai Kishore","","CSK","Bowler"
-"25",29,"Anmolpreet Singh","","MI","Batsman"
-"26",30,"Rohit Sharma","Captain","MI","Batsman"
-"27",31,"Suryakumar Yadav","","MI","Batsman"
-"28",32,"Chris Lynn","Overseas","MI","Batsman"
-"29",33,"Saurabh Tiwary","","MI","Batsman"
-"30",35,"Anukul Roy","","MI","All-Rounder"
-"31",36,"Jayant Yadav","","MI","All-Rounder"
-"32",37,"Krunal Pandya","","MI","All-Rounder"
-"33",38,"Hardik Pandya","","MI","All-Rounder"
-"34",39,"Kieron Pollard","Overseas","MI","All-Rounder"
-"35",40,"Sherfane Rutherford","Overseas","MI","All-Rounder"
-"36",41,"Prince Balwant Rai Singh","","MI","All-Rounder"
-"37",43,"Quinton de Kock","Overseas","MI","Wicket Keeper"
-"38",44,"Aditya Tare","","MI","Wicket Keeper"
-"39",45,"Ishan Kishan","","MI","Wicket Keeper"
-"40",47,"Rahul Chahar","","MI","Bowler"
-"41",48,"Mitchell McClenaghan","Overseas","MI","Bowler"
-"42",49,"Jasprit Bumrah","","MI","Bowler"
-"43",50,"Lasith Malinga","Overseas","MI","Bowler"
-"44",51,"Trent Boult","Overseas","MI","Bowler"
-"45",52,"Dhawal Kulkarni","","MI","Bowler"
-"46",53,"Nathan Coulter-Nile","Overseas","MI","Bowler"
-"47",54,"Mohsin Khan","","MI","Bowler"
-"48",55,"Digvijay Deshmukh","","MI","Bowler"
-"49",57,"Shikhar Dhawan","","DC","Batsman"
-"50",58,"Shreyas Iyer","Captain","DC","Batsman"
-"51",59,"Prithvi Shaw","","DC","Batsman"
-"52",60,"Ajinkya Rahane","","DC","Batsman"
-"53",61,"Jason Roy","Overseas","DC","Batsman"
-"54",62,"Shimron Hetmyer","Overseas","DC","Batsman"
-"55",64,"Harshal Patel","","DC","All-Rounder"
-"56",65,"Axar Patel","","DC","All-Rounder"
-"57",66,"Keemo Paul","Overseas","DC","All-Rounder"
-"58",67,"Chris Woakes","Overseas","DC","All-Rounder"
-"59",68,"Marcus Stoinis","Overseas","DC","All-Rounder"
-"60",69,"Lalit Yadav","","DC","All-Rounder"
-"61",71,"Rishabh Pant","","DC","Wicket Keeper"
-"62",72,"Alex Carey","Overseas","DC","Wicket Keeper"
-"63",74,"Sandeep Lamichhane","Overseas","DC","Bowler"
-"64",75,"Avesh Khan","","DC","Bowler"
-"65",76,"Kagiso Rabada","Overseas","DC","Bowler"
-"66",77,"Ishant Sharma","","DC","Bowler"
-"67",78,"Amit Mishra","","DC","Bowler"
-"68",79,"Ravichandran Ashwin","","DC","Bowler"
-"69",80,"Mohit Sharma","","DC","Bowler"
-"70",81,"Tushar Deshpande","","DC","Bowler"
-"71",83,"Manish Pandey","","SRH","Batsman"
-"72",84,"Kane Williamson","Captain, Overseas","SRH","Batsman"
-"73",85,"David Warner","Overseas","SRH","Batsman"
-"74",86,"Virat Singh","","SRH","Batsman"
-"75",87,"Priyam Garg","","SRH","Batsman"
-"76",89,"Mohammad Nabi","Overseas","SRH","All-Rounder"
-"77",90,"Abhishek Sharma","","SRH","All-Rounder"
-"78",91,"Vijay Shankar","","SRH","All-Rounder"
-"79",92,"Mitchell Marsh","Overseas","SRH","All-Rounder"
-"80",93,"Bavanaka Sandeep","","SRH","All-Rounder"
-"81",94,"Fabian Allen","Overseas","SRH","All-Rounder"
-"82",95,"Abdul Samad","","SRH","All-Rounder"
-"83",96,"Sanjay Yadav","","SRH","All-Rounder"
-"84",98,"Shreevats Goswami","","SRH","Wicket Keeper"
-"85",99,"Wriddhiman Saha","","SRH","Wicket Keeper"
-"86",100,"Jonny Bairstow","Overseas","SRH","Wicket Keeper"
-"87",102,"Shahbaz Nadeem","","SRH","Bowler"
-"88",103,"Siddarth Kaul","","SRH","Bowler"
-"89",104,"Bhuvneshwar Kumar","","SRH","Bowler"
-"90",105,"Rashid Khan","Overseas","SRH","Bowler"
-"91",106,"Khaleel Ahmed","","SRH","Bowler"
-"92",107,"Basil Thampi","","SRH","Bowler"
-"93",108,"Billy Stanlake","Overseas","SRH","Bowler"
-"94",109,"Thangarasu Natarajan","","SRH","Bowler"
-"95",110,"Sandeep Sharma","","SRH","Bowler"
-"96",112,"Shikhar Dhawan","","KXIP","Batsman"
-"97",113,"Shreyas Iyer","Captain","KXIP","Batsman"
-"98",114,"Prithvi Shaw","","KXIP","Batsman"
-"99",115,"Ajinkya Rahane","","KXIP","Batsman"
-"100",116,"Jason Roy","Overseas","KXIP","Batsman"
-"101",117,"Shimron Hetmyer","Overseas","KXIP","Batsman"
-"102",119,"Harshal Patel","","KXIP","All-Rounder"
-"103",120,"Axar Patel","","KXIP","All-Rounder"
-"104",121,"Keemo Paul","Overseas","KXIP","All-Rounder"
-"105",122,"Chris Woakes","Overseas","KXIP","All-Rounder"
-"106",123,"Marcus Stoinis","Overseas","KXIP","All-Rounder"
-"107",124,"Lalit Yadav","","KXIP","All-Rounder"
-"108",126,"Rishabh Pant","","KXIP","Wicket Keeper"
-"109",127,"Alex Carey","Overseas","KXIP","Wicket Keeper"
-"110",129,"Sandeep Lamichhane","Overseas","KXIP","Bowler"
-"111",130,"Avesh Khan","","KXIP","Bowler"
-"112",131,"Kagiso Rabada","Overseas","KXIP","Bowler"
-"113",132,"Ishant Sharma","","KXIP","Bowler"
-"114",133,"Amit Mishra","","KXIP","Bowler"
-"115",134,"Ravichandran Ashwin","","KXIP","Bowler"
-"116",135,"Mohit Sharma","","KXIP","Bowler"
-"117",136,"Tushar Deshpande","","KXIP","Bowler"
-"118",138,"Manan Vohra","","RR","Batsman"
-"119",139,"Shashank Singh","","RR","Batsman"
-"120",140,"Steve Smith","Overseas; Captain","RR","Batsman"
-"121",141,"David Miller","Overseas","RR","Batsman"
-"122",143,"Riyan Parag","","RR","All-Rounder"
-"123",144,"Mahipal Lomror","","RR","All-Rounder"
-"124",145,"Shreyas Gopal","","RR","All-Rounder"
-"125",146,"Ben Stokes","Overseas","RR","All-Rounder"
-"126",147,"Rahul Tewatia","","RR","All-Rounder"
-"127",148,"Yashasvi Jaiswal","","RR","All-Rounder"
-"128",149,"Aniruddha Joshi","","RR","All-Rounder"
-"129",151,"Sanju Samson","","RR","Wicket Keeper"
-"130",152,"Jos Buttler","Overseas","RR","Wicket Keeper"
-"131",153,"Robin Uthappa","","RR","Wicket Keeper"
-"132",154,"Anuj Rawat","","RR","Wicket Keeper"
-"133",156,"Jofra Archer","Overseas","RR","Bowler"
-"134",157,"Jaydev Unadkat","","RR","Bowler"
-"135",158,"Varun Aaron","","RR","Bowler"
-"136",159,"Andrew Tye","Overseas","RR","Bowler"
-"137",160,"Tom Curran","Overseas","RR","Bowler"
-"138",161,"Oshane Thomas","Overseas","RR","Bowler"
-"139",162,"Ankit Rajpoot","","RR","Bowler"
-"140",163,"Akash Singh","","RR","Bowler"
-"141",164,"Kartik Tyagi","","RR","Bowler"
-"142",165,"Mayank Markande","","RR","Bowler"
-"143",167,"AB de Villiers","Overseas, Vice-captain","RCB","Batsman"
-"144",168,"Virat Kohli","Captain","RCB","Batsman"
-"145",169,"Gurkeerat Singh","Occasional wicket-keeper","RCB","Batsman"
-"146",170,"Devdutt Padikkal","","RCB","Batsman"
-"147",171,"Aaron Finch","Overseas","RCB","Batsman"
-"148",173,"Shivam Dube","","RCB","All-Rounder"
-"149",174,"Moeen Ali","Overseas","RCB","All-Rounder"
-"150",175,"Pawan Negi","","RCB","All-Rounder"
-"151",176,"Washington Sundar","","RCB","All-Rounder"
-"152",177,"Chris Morris","Overseas","RCB","All-Rounder"
-"153",178,"Pavan Deshpande","","RCB","All-Rounder"
-"154",180,"Parthiv Patel","","RCB","Wicket Keeper"
-"155",181,"Josh Philippe","","RCB","Wicket Keeper"
-"156",183,"Yuzvendra Chahal","","RCB","Bowler"
-"157",184,"Mohammed Siraj","","RCB","Bowler"
-"158",185,"Umesh Yadav","","RCB","Bowler"
-"159",186,"Navdeep Saini","","RCB","Bowler"
-"160",187,"Kane Richardson","Overseas","RCB","Bowler"
-"161",188,"Dale Steyn","Overseas","RCB","Bowler"
-"162",189,"Shahbaz Nadeem","","RCB","Bowler"
-"163",190,"Isuru Udana","Overseas","RCB","Bowler"
-"164",192,"Nitish Rana","","KKR","Batsman"
-"165",193,"Rinku Singh","","KKR","Batsman"
-"166",194,"Shubman Gill","","KKR","Batsman"
-"167",195,"Eoin Morgan","Overseas","KKR","Batsman"
-"168",196,"Siddhesh Lad","","KKR","Batsman"
-"169",197,"Rahul Tripathi","","KKR","Batsman"
-"170",199,"Andre Russell","Overseas","KKR","All-Rounder"
-"171",200,"Sunil Narine","Overseas","KKR","All-Rounder"
-"172",201,"Kamlesh Nagarkoti","","KKR","All-Rounder"
-"173",202,"Chris Green","Overseas","KKR","All-Rounder"
-"174",204,"Dinesh Karthik","Captain","KKR","Wicket Keeper"
-"175",205,"Tom Banton","Overseas","KKR","Wicket Keeper"
-"176",206,"Nikhil Naik","","KKR","Wicket Keeper"
-"177",208,"Harry Gurney","Overseas","KKR","Bowler"
-"178",209,"Kuldeep Yadav","","KKR","Bowler"
-"179",210,"Shivam Mavi","","KKR","Bowler"
-"180",211,"Prasidh Krishna","","KKR","Bowler"
-"181",212,"Sandeep Warrier","","KKR","Bowler"
-"182",213,"Lockie Ferguson","Overseas","KKR","Bowler"
-"183",214,"Pat Cummins","Overseas","KKR","Bowler"
-"184",215,"Varun Chakravarthy","","KKR","Bowler"
-"185",216,"Manimaran Siddharth","","KKR","Bowler"
-"186",217,"Pravin Tambe","","KKR","Bowler"
+id,Name,Notes,team,type
+1,Murali Vijay,,CSK,Batsman
+2,Suresh Raina,Vice-captain,CSK,Batsman
+3,Ambati Rayudu,,CSK,Batsman
+4,Faf du Plessis,Overseas,CSK,Batsman
+5,Kedar Jadhav,,CSK,Batsman
+6,Ruturaj Gaikwad,,CSK,Batsman
+7,Ravindra Jadeja,,CSK,All-Rounder
+8,Shane Watson,Overseas,CSK,All-Rounder
+9,Karn Sharma,,CSK,All-Rounder
+10,Dwayne Bravo,Overseas,CSK,All-Rounder
+11,Mitchell Santner,Overseas,CSK,All-Rounder
+12,Sam Curran,Overseas,CSK,All-Rounder
+13,MS Dhoni,Captain,CSK,Wicket Keeper
+14,Narayan Jagadeesan,,CSK,Wicket Keeper
+15,Lungi Ngidi,Overseas,CSK,Bowler
+16,Monu Kumar,,CSK,Bowler
+17,KM Asif,,CSK,Bowler
+18,Harbhajan Singh,,CSK,Bowler
+19,Shardul Thakur,,CSK,Bowler
+20,Deepak Chahar,,CSK,Bowler
+21,Imran Tahir,Overseas,CSK,Bowler
+22,Piyush Chawla,,CSK,Bowler
+23,Josh Hazlewood,Overseas,CSK,Bowler
+24,R Sai Kishore,,CSK,Bowler
+25,Anmolpreet Singh,,MI,Batsman
+26,Rohit Sharma,Captain,MI,Batsman
+27,Suryakumar Yadav,,MI,Batsman
+28,Chris Lynn,Overseas,MI,Batsman
+29,Saurabh Tiwary,,MI,Batsman
+30,Anukul Roy,,MI,All-Rounder
+31,Jayant Yadav,,MI,All-Rounder
+32,Krunal Pandya,,MI,All-Rounder
+33,Hardik Pandya,,MI,All-Rounder
+34,Kieron Pollard,Overseas,MI,All-Rounder
+35,Sherfane Rutherford,Overseas,MI,All-Rounder
+36,Prince Balwant Rai Singh,,MI,All-Rounder
+37,Quinton de Kock,Overseas,MI,Wicket Keeper
+38,Aditya Tare,,MI,Wicket Keeper
+39,Ishan Kishan,,MI,Wicket Keeper
+40,Rahul Chahar,,MI,Bowler
+41,Mitchell McClenaghan,Overseas,MI,Bowler
+42,Jasprit Bumrah,,MI,Bowler
+43,Lasith Malinga,Overseas,MI,Bowler
+44,Trent Boult,Overseas,MI,Bowler
+45,Dhawal Kulkarni,,MI,Bowler
+46,Nathan Coulter-Nile,Overseas,MI,Bowler
+47,Mohsin Khan,,MI,Bowler
+48,Digvijay Deshmukh,,MI,Bowler
+49,Shikhar Dhawan,,DC,Batsman
+50,Shreyas Iyer,Captain,DC,Batsman
+51,Prithvi Shaw,,DC,Batsman
+52,Ajinkya Rahane,,DC,Batsman
+53,Jason Roy,Overseas,DC,Batsman
+54,Shimron Hetmyer,Overseas,DC,Batsman
+55,Harshal Patel,,DC,All-Rounder
+56,Axar Patel,,DC,All-Rounder
+57,Keemo Paul,Overseas,DC,All-Rounder
+58,Chris Woakes,Overseas,DC,All-Rounder
+59,Marcus Stoinis,Overseas,DC,All-Rounder
+60,Lalit Yadav,,DC,All-Rounder
+61,Rishabh Pant,,DC,Wicket Keeper
+62,Alex Carey,Overseas,DC,Wicket Keeper
+63,Sandeep Lamichhane,Overseas,DC,Bowler
+64,Avesh Khan,,DC,Bowler
+65,Kagiso Rabada,Overseas,DC,Bowler
+66,Ishant Sharma,,DC,Bowler
+67,Amit Mishra,,DC,Bowler
+68,Ravichandran Ashwin,,DC,Bowler
+69,Mohit Sharma,,DC,Bowler
+70,Tushar Deshpande,,DC,Bowler
+71,Manish Pandey,,SRH,Batsman
+72,Kane Williamson,"Captain, Overseas",SRH,Batsman
+73,David Warner,Overseas,SRH,Batsman
+74,Virat Singh,,SRH,Batsman
+75,Priyam Garg,,SRH,Batsman
+76,Mohammad Nabi,Overseas,SRH,All-Rounder
+77,Abhishek Sharma,,SRH,All-Rounder
+78,Vijay Shankar,,SRH,All-Rounder
+79,Mitchell Marsh,Overseas,SRH,All-Rounder
+80,Bavanaka Sandeep,,SRH,All-Rounder
+81,Fabian Allen,Overseas,SRH,All-Rounder
+82,Abdul Samad,,SRH,All-Rounder
+83,Sanjay Yadav,,SRH,All-Rounder
+84,Shreevats Goswami,,SRH,Wicket Keeper
+85,Wriddhiman Saha,,SRH,Wicket Keeper
+86,Jonny Bairstow,Overseas,SRH,Wicket Keeper
+87,Shahbaz Nadeem,,SRH,Bowler
+88,Siddarth Kaul,,SRH,Bowler
+89,Bhuvneshwar Kumar,,SRH,Bowler
+90,Rashid Khan,Overseas,SRH,Bowler
+91,Khaleel Ahmed,,SRH,Bowler
+92,Basil Thampi,,SRH,Bowler
+93,Billy Stanlake,Overseas,SRH,Bowler
+94,Thangarasu Natarajan,,SRH,Bowler
+95,Sandeep Sharma,,SRH,Bowler
+96,Shikhar Dhawan,,KXIP,Batsman
+97,Shreyas Iyer,Captain,KXIP,Batsman
+98,Prithvi Shaw,,KXIP,Batsman
+99,Ajinkya Rahane,,KXIP,Batsman
+100,Jason Roy,Overseas,KXIP,Batsman
+101,Shimron Hetmyer,Overseas,KXIP,Batsman
+102,Harshal Patel,,KXIP,All-Rounder
+103,Axar Patel,,KXIP,All-Rounder
+104,Keemo Paul,Overseas,KXIP,All-Rounder
+105,Chris Woakes,Overseas,KXIP,All-Rounder
+106,Marcus Stoinis,Overseas,KXIP,All-Rounder
+107,Lalit Yadav,,KXIP,All-Rounder
+108,Rishabh Pant,,KXIP,Wicket Keeper
+109,Alex Carey,Overseas,KXIP,Wicket Keeper
+110,Sandeep Lamichhane,Overseas,KXIP,Bowler
+111,Avesh Khan,,KXIP,Bowler
+112,Kagiso Rabada,Overseas,KXIP,Bowler
+113,Ishant Sharma,,KXIP,Bowler
+114,Amit Mishra,,KXIP,Bowler
+115,Ravichandran Ashwin,,KXIP,Bowler
+116,Mohit Sharma,,KXIP,Bowler
+117,Tushar Deshpande,,KXIP,Bowler
+118,Manan Vohra,,RR,Batsman
+119,Shashank Singh,,RR,Batsman
+120,Steve Smith,Overseas; Captain,RR,Batsman
+121,David Miller,Overseas,RR,Batsman
+122,Riyan Parag,,RR,All-Rounder
+123,Mahipal Lomror,,RR,All-Rounder
+124,Shreyas Gopal,,RR,All-Rounder
+125,Ben Stokes,Overseas,RR,All-Rounder
+126,Rahul Tewatia,,RR,All-Rounder
+127,Yashasvi Jaiswal,,RR,All-Rounder
+128,Aniruddha Joshi,,RR,All-Rounder
+129,Sanju Samson,,RR,Wicket Keeper
+130,Jos Buttler,Overseas,RR,Wicket Keeper
+131,Robin Uthappa,,RR,Wicket Keeper
+132,Anuj Rawat,,RR,Wicket Keeper
+133,Jofra Archer,Overseas,RR,Bowler
+134,Jaydev Unadkat,,RR,Bowler
+135,Varun Aaron,,RR,Bowler
+136,Andrew Tye,Overseas,RR,Bowler
+137,Tom Curran,Overseas,RR,Bowler
+138,Oshane Thomas,Overseas,RR,Bowler
+139,Ankit Rajpoot,,RR,Bowler
+140,Akash Singh,,RR,Bowler
+141,Kartik Tyagi,,RR,Bowler
+142,Mayank Markande,,RR,Bowler
+143,AB de Villiers,"Overseas, Vice-captain",RCB,Batsman
+144,Virat Kohli,Captain,RCB,Batsman
+145,Gurkeerat Singh,Occasional wicket-keeper,RCB,Batsman
+146,Devdutt Padikkal,,RCB,Batsman
+147,Aaron Finch,Overseas,RCB,Batsman
+148,Shivam Dube,,RCB,All-Rounder
+149,Moeen Ali,Overseas,RCB,All-Rounder
+150,Pawan Negi,,RCB,All-Rounder
+151,Washington Sundar,,RCB,All-Rounder
+152,Chris Morris,Overseas,RCB,All-Rounder
+153,Pavan Deshpande,,RCB,All-Rounder
+154,Parthiv Patel,,RCB,Wicket Keeper
+155,Josh Philippe,,RCB,Wicket Keeper
+156,Yuzvendra Chahal,,RCB,Bowler
+157,Mohammed Siraj,,RCB,Bowler
+158,Umesh Yadav,,RCB,Bowler
+159,Navdeep Saini,,RCB,Bowler
+160,Kane Richardson,Overseas,RCB,Bowler
+161,Dale Steyn,Overseas,RCB,Bowler
+162,Shahbaz Nadeem,,RCB,Bowler
+163,Isuru Udana,Overseas,RCB,Bowler
+164,Nitish Rana,,KKR,Batsman
+165,Rinku Singh,,KKR,Batsman
+166,Shubman Gill,,KKR,Batsman
+167,Eoin Morgan,Overseas,KKR,Batsman
+168,Siddhesh Lad,,KKR,Batsman
+169,Rahul Tripathi,,KKR,Batsman
+170,Andre Russell,Overseas,KKR,All-Rounder
+171,Sunil Narine,Overseas,KKR,All-Rounder
+172,Kamlesh Nagarkoti,,KKR,All-Rounder
+173,Chris Green,Overseas,KKR,All-Rounder
+174,Dinesh Karthik,Captain,KKR,Wicket Keeper
+175,Tom Banton,Overseas,KKR,Wicket Keeper
+176,Nikhil Naik,,KKR,Wicket Keeper
+177,Harry Gurney,Overseas,KKR,Bowler
+178,Kuldeep Yadav,,KKR,Bowler
+179,Shivam Mavi,,KKR,Bowler
+180,Prasidh Krishna,,KKR,Bowler
+181,Sandeep Warrier,,KKR,Bowler
+182,Lockie Ferguson,Overseas,KKR,Bowler
+183,Pat Cummins,Overseas,KKR,Bowler
+184,Varun Chakravarthy,,KKR,Bowler
+185,Manimaran Siddharth,,KKR,Bowler
+186,Pravin Tambe,,KKR,Bowler
