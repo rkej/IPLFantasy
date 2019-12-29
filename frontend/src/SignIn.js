@@ -12,7 +12,8 @@ export default class SignIn extends Component {
         super(props);
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            error: 0
         };
         this.handleInputChange = this.handleInputChange.bind(this);
     }
@@ -40,10 +41,11 @@ export default class SignIn extends Component {
         })
         .catch((err)=>{
             alert(err)
+            this.state.error = 1
         })
         .then(response=>{
-            this.props.history.push(`home?${this.state.email}`);
-                
+            if(this.state.error != 1){
+                this.props.history.push(`home?${this.state.email}`);}
         }
         )
     }
