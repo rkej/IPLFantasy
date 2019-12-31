@@ -79,10 +79,10 @@ export default class Home extends Component {
     var CSK = this.state.data
     var CSKrows = CSK.map(function(csk){
       return (<tr>
-      <td>{csk.name}</td>
-      <td>{csk.type}</td>
-      <td>{csk.notes}</td>
-      <td>{csk.team}</td>
+      <td style = {{color: "white"}}>{csk.name}</td>
+      <td style = {{color: "white"}}>{csk.type}</td>
+      <td style = {{color: "white"}}>{csk.notes}</td>
+      <td style = {{color: "white"}}>{csk.team}</td>
       <Button color="success" style={{marginTop: "25%", marginBottom: "25%"}}>Add</Button>
     </tr>)
     });
@@ -92,27 +92,27 @@ export default class Home extends Component {
     return <div>
         <LoginNavBar />
         <Row>
-      <Col sm="5">
+      <Col sm="6">
       <Card style={{
                 margin: '10px',
                 padding: 5,
                 display: 'block',
-                backgroundColor: 'yellow'
+                backgroundColor: '#2E353B'
                 
             }}>
 
-                <CardHeader style={{ backgroundColor: 'blue', color: 'white' }}><strong>Chennai Super Kings</strong></CardHeader>
+                <CardHeader style={{ backgroundColor: '#B0C4DE', color: 'black' }}><strong>SQUAD VIEW</strong></CardHeader>
 
                 <CardBody>
-                <Table>
+                <Table style = {{marginBottom: "-5%"}}>
       <thead>
         <tr>
           
-          <th>Name</th>
-          <th>Type</th>
-          <th>Notes</th>
-          <th><Nav><UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
+          <th style = {{color: "white"}}>Name</th>
+          <th style = {{color: "white"}}>Type</th>
+          <th style = {{color: "white"}}>Notes</th>
+          <th style = {{color: "white"}}><Nav><UncontrolledDropdown nav inNavbar>
+              <DropdownToggle style = {{color: "white", marginBottom: "-10%"}}  nav caret>
                 Team
               </DropdownToggle>
               <DropdownMenu right>
@@ -122,7 +122,7 @@ export default class Home extends Component {
                 <DropdownItem onClick = {this.onDC}>
                   DC
                 </DropdownItem>
-                <DropdownItem> onClick = {this.onKKR}
+                <DropdownItem onClick = {this.onKKR}>
                   KKR
                 </DropdownItem>
                 <DropdownItem onClick = {this.onKXIP}>
