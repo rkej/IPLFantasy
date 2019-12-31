@@ -153,6 +153,32 @@ export default class Home extends Component {
                 </CardBody>
             </Card>
             </Col>
+            <Col sm = "6">
+            <Card style={{
+                margin: '10px',
+                padding: 5,
+                display: 'block',
+                backgroundColor: '#2E353B'
+                
+            }}>
+
+                <CardHeader style={{ backgroundColor: '#B0C4DE', color: 'black' }}><strong>Your team</strong></CardHeader>
+
+                <CardBody>
+                <Table style = {{marginBottom: "-5%"}}>
+      <thead>
+        <tr>
+          
+          <th style = {{color: "white"}}>Name</th>
+          <th style = {{color: "white"}}>Type</th>
+          <th style = {{color: "white"}}>Notes</th>
+          <th style = {{color: "white"}}>Team</th>
+            </tr>
+            </thead>
+            </Table>
+            </CardBody>
+            </Card>
+            </Col>
             </Row>
             
         <style>{'body { background-color: black; }'}
