@@ -103,4 +103,19 @@ public class TeamDataController {
 
     }
 
+    @RequestMapping(value = "api/PlayerToRemove", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody
+    ResponseEntity<String> addPlayers(@RequestParam("Id") Integer Id) {
+        TeamDto playerid = teamrepo.findId(Id);
+        String team = playerid.getTeam();
+        String Name = playerid.getName();
+        String Notes = playerid.getNotes();
+        String type = playerid.getType();
+        teamrepo.deleteTeam(Id);
+        playerrepo.insertPlayer(Id, Name, Notes, type, team);
+
+
+        return new ResponseEntity<>("Player removed!", HttpStatus.OK);
+    }
+
 }
