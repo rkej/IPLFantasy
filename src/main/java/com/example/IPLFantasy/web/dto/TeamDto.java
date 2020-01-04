@@ -80,9 +80,11 @@ public class TeamDto {
     public void setId(Integer id) {
         this.id = id;
     }
+    public TeamDto(){
 
-    public PlayersDto(){}
-    public PlayersDto(Integer id, String Name, String teamName, String email, String Notes, String team, String type){
+    }
+    
+    public TeamDto(Integer id, String Name, String teamName, String email, String Notes, String team, String type){
         this.id = id;
         this.Name=Name;
         this.Notes=Notes;
