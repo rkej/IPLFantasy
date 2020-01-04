@@ -6,7 +6,7 @@ import {
 import axios from 'axios';
 import App from './App';
 
-export default class SignIn extends Component {
+export default class Register extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -50,8 +50,8 @@ export default class SignIn extends Component {
     }
 }
     render() {
-        return <div><App />
-            <br />
+        return <div><App/>
+            <br/>
             <Card style={{
                 width: "40%",
                 verticalAlign: 'center',
