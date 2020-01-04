@@ -100,8 +100,15 @@ export default class Home extends Component {
       email: this.state.email, 
       Id: event.target.dataset['id']
     }
-  })
+  }).then(
    axios.post('api/getSquadData', null, {
+    params: {
+      email: this.state.email
+    }
+  })
+  .then(response=>response.data)
+  .then(json=> this.setState({squadData: json})))
+  axios.post('api/getSquadData', null, {
     params: {
       email: this.state.email
     }
@@ -109,10 +116,24 @@ export default class Home extends Component {
   .then(response=>response.data)
   .then(json=> this.setState({squadData: json}))
 }
+onRemoval(event){
+  axios.post('/api/PlayerToRemove', null, {
+    params: {
+      Id: event.target.dataset['id2']
+    }
+  }).then(
+   axios.post('api/getSquadData', null, {
+    params: {
+      email: this.state.email
+    }
+  })
+  .then(response=>response.data)
+  .then(json=> this.setState({squadData: json})))
+}
 
   render() {
     var onadd = (event)=>this.onAdd(event)
-
+    var onRemoval = (event)=>this.onRemoval(event)
     var CSK = this.state.teamdata;
     var CSKrows = CSK.map(function(csk){
       return (<tr>
@@ -130,15 +151,15 @@ export default class Home extends Component {
         <td style = {{color: "white"}}>{squad.type}</td>
         <td style = {{color: "white"}}>{squad.notes}</td>
         <td style = {{color: "white"}}>{squad.team}</td>
-        <Button data-id2 = {squad.id} color="danger" style={{marginTop: "25%", marginBottom: "25%"}}>Remove</Button>
+        <Button data-id2 = {squad.id} color="danger" style={{marginTop: "25%", marginBottom: "25%"}} onClick = {onRemoval}>Remove</Button>
       </tr>
       )
     })
     
       
     
-    return <div>
-        <LoginNavBar />
+    return <div><LoginNavBar />
+    <br/>&nbsp; &nbsp;<Button color = "info" outline>See your Playing 11</Button>
         <Row>
       <Col sm="6">
       <Card style={{
@@ -149,7 +170,7 @@ export default class Home extends Component {
                 
             }}>
 
-                <CardHeader style={{ backgroundColor: '#B0C4DE', color: 'black' }}><strong>SQUAD VIEW</strong></CardHeader>
+                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>SQUAD VIEW</strong></CardHeader>
 
                 <CardBody>
                 <Table style = {{marginBottom: "-5%"}}>
@@ -197,6 +218,7 @@ export default class Home extends Component {
       <tbody>
         {CSKrows}
       </tbody>
+      <br/>
     </Table>
                 </CardBody>
             </Card>
@@ -210,7 +232,7 @@ export default class Home extends Component {
                 
             }}>
 
-                <CardHeader style={{ backgroundColor: '#B0C4DE', color: 'black' }}><strong>Your team</strong></CardHeader>
+                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>Your team</strong></CardHeader>
 
                 <CardBody>
                 <Table style = {{marginBottom: "-5%"}}>
@@ -226,6 +248,7 @@ export default class Home extends Component {
             <tbody>
               {squadRows}
             </tbody>
+            <br/>
             </Table>
             </CardBody>
             </Card>

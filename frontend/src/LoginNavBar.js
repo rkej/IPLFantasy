@@ -14,19 +14,18 @@ export default class LoginNavBar extends React.Component {
     
         this.toggle = this.toggle.bind(this);
         this.state = {
-          isOpen: false
+          isOpen: false, 
         };
       }
-      toggle() {
+      toggle(props) {
         this.setState({
           isOpen: !this.state.isOpen
         });
       }
 
     render() {
-        const { classes } = this.props;
         return <div> <Navbar style = {{backgroundColor: "#7F3F98"}} dark expand ="md">
-            <NavbarBrand>CricFantasy</NavbarBrand>
+            <NavbarBrand href = "/dashboard">CricFantasy</NavbarBrand>
             <NavbarToggler onClick={this.toggle}/>
             <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className = "ml-auto" navbar>
