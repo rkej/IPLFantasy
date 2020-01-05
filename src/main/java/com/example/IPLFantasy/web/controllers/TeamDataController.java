@@ -4,6 +4,7 @@ import com.example.IPLFantasy.web.dto.PlayersDto;
 import com.example.IPLFantasy.web.dto.TeamDto;
 import com.example.IPLFantasy.web.dto.UserDto;
 import com.example.IPLFantasy.web.repository.PlayerRepository;
+import com.example.IPLFantasy.web.repository.PlayingxiRepository;
 import com.example.IPLFantasy.web.repository.TeamRepository;
 import com.example.IPLFantasy.web.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,8 @@ public class TeamDataController {
     public TeamRepository teamrepo;
     @Autowired
     UserRepository userrepo;
+    @Autowired
+    PlayingxiRepository playingxirepo;
     @RequestMapping(value = "/api/getCSKData", method = RequestMethod.GET, produces = { "application/json"})
     public @ResponseBody
     List<PlayersDto> CSKData(){
@@ -116,6 +119,32 @@ public class TeamDataController {
 
 
         return new ResponseEntity<>("Player removed!", HttpStatus.OK);
+    }
+    @RequestMapping(value = "api/addPlaying11", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody
+    ResponseEntity<String> addPlayingXI(@RequestParam("Id") Integer Id) {
+        TeamDto playerid = teamrepo.findId(Id);
+        String team = playerid.getTeam();
+        String Name = playerid.getName();
+        String Notes = playerid.getNotes();
+        String type = playerid.getType();
+        String email = playerid.getEmail();
+        String teamName = playerid.getTeamName();
+
+
+        List<TeamDto> players = teamrepo.findByEmail(email);
+        if (players.size() < 11) {
+            playingxirepo.insertTeam(Id, teamName, email, Name, Notes, type, team);
+
+            return new ResponseEntity<>("New player added!", HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>("Please remove a player before adding another", HttpStatus.OK);
+        }
+    }
+    @RequestMapping(value = "api/getPlaying11", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody List<TeamDto> getPlaying11(@RequestParam("email") String email){
+
+        return playingxirepo.findByEmail(email);
     }
 
 }

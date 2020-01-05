@@ -100,7 +100,8 @@ export default class Home extends Component {
       email: this.state.email, 
       Id: event.target.dataset['id']
     }
-  }).then(
+  })
+  .then(
    axios.post('api/getSquadData', null, {
     params: {
       email: this.state.email
@@ -129,6 +130,10 @@ onRemoval(event){
   })
   .then(response=>response.data)
   .then(json=> this.setState({squadData: json})))
+}
+OnPlaying = event => {
+  event.preventDefault();
+  this.props.history.push(`playing11?${this.state.email}`)
 }
 
   render() {
@@ -159,7 +164,7 @@ onRemoval(event){
       
     
     return <div><LoginNavBar />
-    <br/>&nbsp; &nbsp;<Button color = "info" outline>See your Playing 11</Button>
+    &nbsp; &nbsp;<Button color = "info" onClick = {this.OnPlaying} outline>See your Playing 11</Button>
         <Row>
       <Col sm="6">
       <Card style={{
@@ -170,7 +175,7 @@ onRemoval(event){
                 
             }}>
 
-                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>SQUAD VIEW</strong></CardHeader>
+                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>IPL SQUADS</strong></CardHeader>
 
                 <CardBody>
                 <Table style = {{marginBottom: "-5%"}}>

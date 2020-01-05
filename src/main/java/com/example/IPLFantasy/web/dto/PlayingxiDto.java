@@ -9,7 +9,7 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class TeamDto {
+public class PlayingxiDto {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
@@ -80,11 +80,11 @@ public class TeamDto {
     public void setId(Integer id) {
         this.id = id;
     }
-    public TeamDto(){
+    public PlayingxiDto(){
 
     }
 
-    public TeamDto(Integer id, String Name, String teamName, String email, String Notes, String team, String type){
+    public PlayingxiDto(Integer id, String Name, String teamName, String email, String Notes, String team, String type){
         this.id = id;
         this.Name=Name;
         this.Notes=Notes;
