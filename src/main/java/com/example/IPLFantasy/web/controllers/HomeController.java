@@ -21,6 +21,8 @@ public class HomeController {
     public String dashboard_cli() { return "index.html";}
     @GetMapping(value = "/rules")
     public String rules_cli() { return "index.html";}
+    @GetMapping(value = "/playing11{email}")
+    public String playing11_cli(){ return "index.html";}
 }
 
 
