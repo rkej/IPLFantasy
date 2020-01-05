@@ -19,4 +19,5 @@ Fantasy App for Indian Premier League. The project is in it's very initial stage
 2. Update the pom.xml to have `<dependency> <groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter-data-jpa</artifactId></dependency><dependency><groupId>mysql</groupId><artifactId>mysql-connector-java</artifactId></dependency><dependency>` (You won't need to do this if you're cloning/pulling from this repo) 
 3. **MANDATORY** Create a database on mysql using the following steps: `mysql -u root -p`, then enter your password and execute `create database iplfantasy_db`. 
 4. Modify the file application.properties according to your own need to configure Hibernate to SQL. 
-4. For the rest, if you have pulled/cloned the most recent version of the project, you're good to go!
+5. For the rest, if you have pulled/cloned the most recent version of the project, you're good to go!
+6. To fill in the tables created by Hibernate, please use the Players.csv file in the data folder to fill in the players_dto table. The rest is transactional. 
