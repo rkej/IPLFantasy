@@ -108,7 +108,7 @@ public class TeamDataController {
 
     @RequestMapping(value = "api/PlayerToRemove", method = RequestMethod.POST, produces = {"application/json"})
     public @ResponseBody
-    ResponseEntity<String> addPlayers(@RequestParam("Id") Integer Id) {
+    ResponseEntity<String> removePlayers(@RequestParam("Id") Integer Id) {
         TeamDto playerid = teamrepo.findId(Id);
         String team = playerid.getTeam();
         String Name = playerid.getName();
@@ -120,6 +120,13 @@ public class TeamDataController {
 
         return new ResponseEntity<>("Player removed!", HttpStatus.OK);
     }
+    @RequestMapping(value = "api/RemovePlaying11", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody
+    ResponseEntity<String> removePlayeringXI(@RequestParam("Id") Integer Id) {
+        playingxirepo.deleteTeam(Id);
+        return new ResponseEntity<>("Player removed!", HttpStatus.OK);
+    }
+
     @RequestMapping(value = "api/addPlaying11", method = RequestMethod.POST, produces = {"application/json"})
     public @ResponseBody
     ResponseEntity<String> addPlayingXI(@RequestParam("Id") Integer Id) {

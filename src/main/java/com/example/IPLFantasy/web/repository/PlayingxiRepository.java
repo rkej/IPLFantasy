@@ -1,6 +1,5 @@
 package com.example.IPLFantasy.web.repository;
 
-package com.example.IPLFantasy.web.repository;
 
 import com.example.IPLFantasy.web.dto.TeamDto;
 import org.springframework.data.jpa.repository.JpaRepository;

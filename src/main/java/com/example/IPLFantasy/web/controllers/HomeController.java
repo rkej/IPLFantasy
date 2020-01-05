@@ -22,7 +22,7 @@ public class HomeController {
     @GetMapping(value = "/rules")
     public String rules_cli() { return "index.html";}
     @GetMapping(value = "/playing11{email}")
-    public String playing11_cli(){ return "index.html"}
+    public String playing11_cli(){ return "index.html";}
 }
 
 

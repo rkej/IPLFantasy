@@ -40,17 +40,25 @@ export default class TeamPage extends Component {
     onAdd(event){
         axios.post('/api/addPlaying11', null, {
          params: {
-           Id: event.target.dataset['id']
+           Id: event.target.dataset['id2']
          }
        })
        .then(
+           axios.post('api/getPlaying11', null, {
+               params: {
+                   email: this.state.email
+               }})
+               .then(response=>response.data)
+            .then(json=> this.setState({playingXI: json}))
+           )
         axios.post('api/getSquadData', null, {
          params: {
            email: this.state.email
          }
+         
        })
        .then(response=>response.data)
-       .then(json=> this.setState({squadData: json})))
+       .then(json=> this.setState({squadData: json}))
        axios.post('api/getSquadData', null, {
          params: {
            email: this.state.email
@@ -60,7 +68,7 @@ export default class TeamPage extends Component {
        .then(json=> this.setState({squadData: json}))
      }
      onRemoval(event){
-       axios.post('/api/PlayerToRemove', null, {
+       axios.post('/api/RemovePlaying11', null, {
          params: {
            Id: event.target.dataset['id2']
          }
@@ -72,6 +80,14 @@ export default class TeamPage extends Component {
        })
        .then(response=>response.data)
        .then(json=> this.setState({squadData: json})))
+       axios.post('api/getPlaying11', null, {
+        params: {
+            email: this.state.email
+        }
+    })
+        .then(response=>response.data)
+     .then(json=> this.setState({playingXI: json}))
+    
      }
     render(){
         var onadd = (event)=>this.onAdd(event)
@@ -83,7 +99,7 @@ export default class TeamPage extends Component {
                 <td style = {{color: "white"}}>{playingxi.type}</td>
                 <td style = {{color: "white"}}>{playingxi.notes}</td>
                 <td style = {{color: "white"}}>{playingxi.team}</td>
-                <Button data-id2 = {playingxi.id} color="success" style={{marginTop: "25%", marginBottom: "25%"}}>Add</Button>
+                <Button data-id2 = {playingxi.id} color="success" style={{marginTop: "25%", marginBottom: "25%"}} color="danger" onClick = {onRemoval}>Remove</Button>
                 </tr>
           )
         })
@@ -94,7 +110,7 @@ export default class TeamPage extends Component {
             <td style = {{color: "white"}}>{squad.type}</td>
             <td style = {{color: "white"}}>{squad.notes}</td>
             <td style = {{color: "white"}}>{squad.team}</td>
-            <Button data-id2 = {squad.id} color="success" style={{marginTop: "25%", marginBottom: "25%"}}>Add</Button>
+            <Button data-id2 = {squad.id} color="success" style={{marginTop: "25%", marginBottom: "25%"}} onClick = {onadd}>Add</Button>
             </tr>
       )
     })
