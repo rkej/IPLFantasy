@@ -9,6 +9,7 @@ import Register from './Register'
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TeamPage from './TeamPage';
+import PowerPlayer from './PowerPlayer';
 const routing = (
   <Router>
     <div>
@@ -17,6 +18,7 @@ const routing = (
       <Route path='/register' exact ={true} component={Register} />
       <Route path='/home' exact ={false} component={Home} />
       <Route path = '/playing11' exact = {false} component = {TeamPage}/>
+      <Route path = '/powerplayer' exact = {false} component = {PowerPlayer}/>
     </div>
   </Router>);
 

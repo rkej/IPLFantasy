@@ -1,6 +1,7 @@
 package com.example.IPLFantasy.web.repository;
 
 
+import com.example.IPLFantasy.web.dto.PlayingxiDto;
 import com.example.IPLFantasy.web.dto.TeamDto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -14,9 +15,9 @@ import java.util.List;
 @EnableJpaRepositories(basePackages = "com.example.IPLFantasy.web.repository")
 @Repository
 @Transactional
-public interface PlayingxiRepository extends JpaRepository<TeamDto, Integer> {
+public interface PlayingxiRepository extends JpaRepository<PlayingxiDto, Integer> {
     @Query(value = "select * FROM iplfantasy_db.playingxi_dto where email = :email", nativeQuery = true)
-    List<TeamDto> findByEmail(@Param("email") String email);
+    List<PlayingxiDto> findByEmail(@Param("email") String email);
     @Modifying
 
     @Query(value = "insert into iplfantasy_db.playingxi_dto (id, team_name, email, name, notes, type, team) VALUES (:Id, :teamName, :email, :Name, :Notes, :type, :team)", nativeQuery = true)
@@ -28,5 +29,5 @@ public interface PlayingxiRepository extends JpaRepository<TeamDto, Integer> {
     void deleteTeam(@Param("Id") Integer Id);
 
     @Query(value =  "select * from iplfantasy_db.playingxi_dto where id = :Id", nativeQuery = true)
-    TeamDto findId(@Param("Id") Integer Id);
+    PlayingxiDto findId(@Param("Id") Integer Id);
 }

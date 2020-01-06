@@ -6,25 +6,25 @@ import {
 } from 'reactstrap';
 import axios from 'axios';
 
-export default class TeamPage extends Component {
+export default class PowerPlayer extends Component {
     constructor(props){
         super(props);
         this.state = {
             email: this.props.location.search.substr(1),
-            squadData: [], 
+            powerPlayer: [], 
             playingXI: []
         }
     }
     componentDidMount(){
-        axios.post('api/getSquadData', null, {
+        axios.post('api/getPowerPlayer', null, {
             params: {
               email: this.state.email, 
-              squadData: [],
+              powerPlayer: [],
               
             }
           })
           .then(response=>response.data)
-          .then(json=> this.setState({squadData: json}))
+          .then(json=> this.setState({powerPlayer: json}))
         axios.post('api/getPlaying11', null, {
             params: {
                 email: this.state.email
@@ -38,7 +38,7 @@ export default class TeamPage extends Component {
         this.props.history.push(`home?${this.state.email}`)
     }
     onAdd(event){
-        axios.post('/api/addPlaying11', null, {
+        axios.post('/api/addPowerPlayer', null, {
          params: {
            Id: event.target.dataset['id2']
          }
@@ -51,35 +51,35 @@ export default class TeamPage extends Component {
                .then(response=>response.data)
             .then(json=> this.setState({playingXI: json}))
            )
-        axios.post('api/getSquadData', null, {
+        axios.post('api/getPowerPlayer', null, {
          params: {
            email: this.state.email
          }
          
        })
        .then(response=>response.data)
-       .then(json=> this.setState({squadData: json}))
-       axios.post('api/getSquadData', null, {
+       .then(json=> this.setState({powerPlayer: json}))
+       axios.post('api/getpowerPlayer', null, {
          params: {
            email: this.state.email
          }
        })
        .then(response=>response.data)
-       .then(json=> this.setState({squadData: json}))
+       .then(json=> this.setState({powerPlayer: json}))
      }
      onRemoval(event){
-       axios.post('/api/RemovePlaying11', null, {
+       axios.post('/api/RemovePowerPlayer', null, {
          params: {
            Id: event.target.dataset['id2']
          }
        }).then(
-        axios.post('api/getSquadData', null, {
+        axios.post('api/getPowerPlayer', null, {
          params: {
            email: this.state.email
          }
        })
        .then(response=>response.data)
-       .then(json=> this.setState({squadData: json})))
+       .then(json=> this.setState({powerPlayer: json})))
        axios.post('api/getPlaying11', null, {
         params: {
             email: this.state.email
@@ -93,6 +93,9 @@ export default class TeamPage extends Component {
          event.preventDefault();
          this.props.history.push(`powerplayer?${this.state.email}`)
      }
+     OnPlaying = event => {
+        this.props.history.push(`playing11?${this.state.email}`)
+      }
     render(){
         var onadd = (event)=>this.onAdd(event)
         var onRemoval = (event)=>this.onRemoval(event)
@@ -103,25 +106,24 @@ export default class TeamPage extends Component {
                 <td style = {{color: "white"}}>{playingxi.type}</td>
                 <td style = {{color: "white"}}>{playingxi.notes}</td>
                 <td style = {{color: "white"}}>{playingxi.team}</td>
-                <Button data-id2 = {playingxi.id} color="success" style={{marginTop: "25%", marginBottom: "25%"}} color="danger" onClick = {onRemoval}>Remove</Button>
+                <Button data-id2 = {playingxi.id} color="primary" style={{marginTop: "25%", marginBottom: "25%"}} color="primary" onClick = {onadd}>Select</Button>
                 </tr>
           )
         })
-        var squad = this.state.squadData
-        var squadRows = squad.map(function(squad){
+        var pp = this.state.powerPlayer
+        var ppRows = pp.map(function(pp){
         return (<tr>
-            <td style = {{color: "white"}}>{squad.name}</td>
-            <td style = {{color: "white"}}>{squad.type}</td>
-            <td style = {{color: "white"}}>{squad.notes}</td>
-            <td style = {{color: "white"}}>{squad.team}</td>
-            <Button data-id2 = {squad.id} color="success" style={{marginTop: "25%", marginBottom: "25%"}} onClick = {onadd}>Add</Button>
+            <td style = {{color: "white"}}>{pp.name}</td>
+            <td style = {{color: "white"}}>{pp.type}</td>
+            <td style = {{color: "white"}}>{pp.notes}</td>
+            <td style = {{color: "white"}}>{pp.team}</td>
+            <Button data-id2 = {pp.id} color="secondary" style={{marginTop: "25%", marginBottom: "25%"}} onClick = {onRemoval}>Change</Button>
             </tr>
       )
     })
         return <div><LoginNavBar/><style>{'body { background-color: black; }'}
         </style>
-        &nbsp; &nbsp;<Button color = "info" onClick = {this.onSquad} outline style = {{marginTop: "10px"}}>Change your squad</Button>
-        &nbsp; &nbsp;<Button  color = "info" onClick = {this.onPP} style = {{marginTop: "10px"}} outline>Select your power player</Button>
+        &nbsp; &nbsp;<Button color = "info" outline style = {{marginTop: "10px"}} onClick = {this.OnPlaying}>Back to Playing XI</Button>
         <Row>
         <Col sm = "6">
             <Card style={{
@@ -132,7 +134,7 @@ export default class TeamPage extends Component {
                 
             }}>
 
-                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>Your team</strong></CardHeader>
+                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>Playing 11</strong></CardHeader>
 
                 <CardBody>
                 <Table style = {{marginBottom: "-5%"}}>
@@ -146,7 +148,7 @@ export default class TeamPage extends Component {
             </tr>
             </thead>
             <tbody>
-              {squadRows}
+              {xirows}
             </tbody>
             <br/>
             </Table>
@@ -162,7 +164,7 @@ export default class TeamPage extends Component {
                 
             }}>
 
-                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>Your Playing 11</strong></CardHeader>
+                <CardHeader style={{ backgroundColor: '#DAA520', color: 'black' }}><strong>Power Player</strong></CardHeader>
 
                 <CardBody>
                 <Table style = {{marginBottom: "-5%"}}>
@@ -176,7 +178,7 @@ export default class TeamPage extends Component {
             </tr>
             </thead>
             <tbody>
-              {xirows}
+              {ppRows}
             </tbody>
             <br/>
             </Table>
