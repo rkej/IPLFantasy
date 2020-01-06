@@ -1,12 +1,7 @@
 package com.example.IPLFantasy.web.controllers;
 
-import com.example.IPLFantasy.web.dto.PlayersDto;
-import com.example.IPLFantasy.web.dto.TeamDto;
-import com.example.IPLFantasy.web.dto.UserDto;
-import com.example.IPLFantasy.web.repository.PlayerRepository;
-import com.example.IPLFantasy.web.repository.PlayingxiRepository;
-import com.example.IPLFantasy.web.repository.TeamRepository;
-import com.example.IPLFantasy.web.repository.UserRepository;
+import com.example.IPLFantasy.web.dto.*;
+import com.example.IPLFantasy.web.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
@@ -26,6 +21,8 @@ public class TeamDataController {
     UserRepository userrepo;
     @Autowired
     PlayingxiRepository playingxirepo;
+    @Autowired
+    PowerPlayerRepository pprepo;
     @RequestMapping(value = "/api/getCSKData", method = RequestMethod.GET, produces = { "application/json"})
     public @ResponseBody
     List<PlayersDto> CSKData(){
@@ -149,9 +146,42 @@ public class TeamDataController {
         }
     }
     @RequestMapping(value = "api/getPlaying11", method = RequestMethod.POST, produces = {"application/json"})
-    public @ResponseBody List<TeamDto> getPlaying11(@RequestParam("email") String email){
+    public @ResponseBody List<PlayingxiDto> getPlaying11(@RequestParam("email") String email){
 
         return playingxirepo.findByEmail(email);
     }
+    @RequestMapping(value = "api/getPowerPlayer", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody List<PowerPlayerDto> getPowerPlayer(@RequestParam("email") String email){
+
+        return pprepo.findByEmail(email);
+    }
+    @RequestMapping(value = "api/addPowerPlayer", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody
+    ResponseEntity<String> addPowerPlayer(@RequestParam("Id") Integer Id) {
+        PlayingxiDto powerplayer = playingxirepo.findId(Id);
+        String team = powerplayer.getTeam();
+        String Name = powerplayer.getName();
+        String Notes = powerplayer.getNotes();
+        String type = powerplayer.getType();
+        String email = powerplayer.getEmail();
+        String teamName = powerplayer.getTeamName();
+
+
+        List<PowerPlayerDto> powerplayers = pprepo.findByEmail(email);
+        if (powerplayers.size() < 1) {
+            pprepo.insertPP(Id, teamName, email, Name, Notes, type, team);
+
+            return new ResponseEntity<>("New powerplayer selected!", HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>("Please remove a player before adding another", HttpStatus.OK);
+        }
+    }
+    @RequestMapping(value = "api/RemovePowerPlayer", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody
+    ResponseEntity<String> removePowerPlayers(@RequestParam("Id") Integer Id) {
+        pprepo.deletePP(Id);
+        return new ResponseEntity<>("Player removed!", HttpStatus.OK);
+    }
+
 
 }
