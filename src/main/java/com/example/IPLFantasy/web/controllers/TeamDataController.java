@@ -112,6 +112,7 @@ public class TeamDataController {
         String Notes = playerid.getNotes();
         String type = playerid.getType();
         teamrepo.deleteTeam(Id);
+        playingxirepo.deleteTeam(Id);
         playerrepo.insertPlayer(Id, Name, Notes, type, team);
 
 

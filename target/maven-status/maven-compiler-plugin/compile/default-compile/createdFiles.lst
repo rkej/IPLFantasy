@@ -1,0 +1,16 @@
+com\example\IPLFantasy\web\dto\PowerPlayerDto.class
+com\example\IPLFantasy\web\repository\UserRepository.class
+com\example\IPLFantasy\web\controllers\TeamDataController.class
+com\example\IPLFantasy\web\controllers\RegistrationController.class
+com\example\IPLFantasy\web\dto\TeamDto.class
+com\example\IPLFantasy\web\repository\PlayingxiRepository.class
+com\example\IPLFantasy\web\dto\PlayersDto.class
+com\example\IPLFantasy\web\controllers\HomeController.class
+com\example\IPLFantasy\web\repository\PowerPlayerRepository.class
+com\example\IPLFantasy\web\dto\LoginDto.class
+com\example\IPLFantasy\web\dto\PlayingxiDto.class
+com\example\IPLFantasy\IPLFantasyApplication.class
+com\example\IPLFantasy\web\controllers\LoginController.class
+com\example\IPLFantasy\web\repository\PlayerRepository.class
+com\example\IPLFantasy\web\dto\UserDto.class
+com\example\IPLFantasy\web\repository\TeamRepository.class
