@@ -16,13 +16,13 @@ public class TeamDataController {
     @Autowired
     private PlayerRepository playerrepo;
     @Autowired
-    public TeamRepository teamrepo;
+    private TeamRepository teamrepo;
     @Autowired
-    UserRepository userrepo;
+    private UserRepository userrepo;
     @Autowired
-    PlayingxiRepository playingxirepo;
+    private PlayingxiRepository playingxirepo;
     @Autowired
-    PowerPlayerRepository pprepo;
+    private PowerPlayerRepository pprepo;
     @RequestMapping(value = "/api/getCSKData", method = RequestMethod.GET, produces = { "application/json"})
     public @ResponseBody
     List<PlayersDto> CSKData(){
@@ -183,6 +183,17 @@ public class TeamDataController {
         pprepo.deletePP(Id);
         return new ResponseEntity<>("Player removed!", HttpStatus.OK);
     }
-
+    @RequestMapping(value = "api/getTeams", method = RequestMethod.GET, produces = {"application/json"})
+    public @ResponseBody List<String> getTeams(){
+        return teamrepo.findTeam();
+    }
+    @RequestMapping(value = "api/squadByTeam", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody List<TeamDto> getByTeam(@RequestParam("team_name") String team_name){
+        return teamrepo.findByTeam(team_name);
+    }
+    @RequestMapping(value = "api/XIbyTeam", method = RequestMethod.POST, produces = {"application/json"})
+    public @ResponseBody List<PlayingxiDto> XIByTeam(@RequestParam("team_name") String team_name){
+        return playingxirepo.findByTeam(team_name);
+    }
 
 }

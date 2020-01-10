@@ -10,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TeamPage from './TeamPage';
 import PowerPlayer from './PowerPlayer';
+import Dashboard from './Dashboard';
 const routing = (
   <Router>
     <div>
@@ -19,6 +20,7 @@ const routing = (
       <Route path='/home' exact ={false} component={Home} />
       <Route path = '/playing11' exact = {false} component = {TeamPage}/>
       <Route path = '/powerplayer' exact = {false} component = {PowerPlayer}/>
+      <Route path = '/dashboard' exact = {true} component = {Dashboard}/>
     </div>
   </Router>);
 

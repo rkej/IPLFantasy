@@ -164,7 +164,7 @@ OnPlaying = event => {
       
     
     return <div><LoginNavBar />
-    &nbsp; &nbsp;<Button color = "info" onClick = {this.OnPlaying} outline>See your Playing 11</Button>
+    &nbsp; &nbsp;<Button color = "info" onClick = {this.OnPlaying} style = {{marginTop: "10px"}} outline>Select Playing 11</Button>
         <Row>
       <Col sm="6">
       <Card style={{
@@ -186,7 +186,7 @@ OnPlaying = event => {
           <th style = {{color: "white"}}>Type</th>
           <th style = {{color: "white"}}>Notes</th>
           <th style = {{color: "white"}}><Nav><UncontrolledDropdown nav inNavbar>
-              <DropdownToggle style = {{color: "white", marginBottom: "-10%"}}  nav caret>
+              <DropdownToggle style = {{color: "white", marginBottom: "-10%", marginLeft: "-17px"}}  nav caret >
                 Team
               </DropdownToggle>
               <DropdownMenu right>
