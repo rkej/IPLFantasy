@@ -6,6 +6,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
+    Badge,
     NavLink } from 'reactstrap';
 
 export default class LoginNavBar extends React.Component {
@@ -32,13 +33,14 @@ export default class LoginNavBar extends React.Component {
                     <NavItem>
                         <NavLink href = "/dashboard">Dashboard</NavLink>
                     </NavItem>
+                    <NavItem><NavLink href = "/score">Score  <Badge style = {{fontSize: "50%"}}>beta</Badge></NavLink></NavItem>
                     <NavItem>
-                        <NavLink href = "/rules">Scoring rules</NavLink>
+                        <NavLink href = "/rules">Rules</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink href = "/">Logout</NavLink>
                     </NavItem>
-                </Nav>
+                </Nav> 
             </Collapse>
                  </Navbar>
             </div>

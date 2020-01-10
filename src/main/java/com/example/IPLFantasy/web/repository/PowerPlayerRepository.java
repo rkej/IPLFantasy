@@ -15,18 +15,18 @@ import java.util.List;
 @Repository
 @Transactional
 public interface PowerPlayerRepository extends JpaRepository<PowerPlayerDto, Integer> {
-    @Query(value = "select * FROM iplfantasy_db.power_player_dto where email = :email", nativeQuery = true)
+    @Query(value = "select * FROM iqhyiotttzde4o5l.power_player_dto where email = :email", nativeQuery = true)
     List<PowerPlayerDto> findByEmail(@Param("email") String email);
     @Modifying
 
-    @Query(value = "insert into iplfantasy_db.power_player_dto (id, team_name, email, name, notes, type, team) VALUES (:Id, :teamName, :email, :Name, :Notes, :type, :team)", nativeQuery = true)
+    @Query(value = "insert into iqhyiotttzde4o5l.power_player_dto (id, team_name, email, name, notes, type, team) VALUES (:Id, :teamName, :email, :Name, :Notes, :type, :team)", nativeQuery = true)
 
     void insertPP(@Param("Id") Integer Id, @Param("teamName") String teamName, @Param("email") String email, @Param("Name") String Name, @Param("Notes") String Notes, @Param("type") String type, @Param("team") String team);
 
     @Modifying
-    @Query(value = "delete from iplfantasy_db.power_player_dto where id = :Id", nativeQuery = true)
+    @Query(value = "delete from iqhyiotttzde4o5l.power_player_dto where id = :Id", nativeQuery = true)
     void deletePP(@Param("Id") Integer Id);
 
-    @Query(value =  "select * from iplfantasy_db.power_player_dto where id = :Id", nativeQuery = true)
+    @Query(value =  "select * from iqhyiotttzde4o5l.power_player_dto where id = :Id", nativeQuery = true)
     PowerPlayerDto findId(@Param("Id") Integer Id);
 }

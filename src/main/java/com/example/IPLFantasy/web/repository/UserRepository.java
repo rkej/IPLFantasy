@@ -15,10 +15,10 @@ import java.util.Map;
 @EnableJpaRepositories(basePackages = "com.example.IPLFantasy.web.repository")
 @Repository
 public interface UserRepository extends JpaRepository<UserDto, Integer> {
-    @Query(value = "select email, password FROM iplfantasy_db.user_dto where email = :email and password = :password", nativeQuery = true)
+    @Query(value = "select email, password FROM iqhyiotttzde4o5l.user_dto where email = :email and password = :password", nativeQuery = true)
     List<String> findByEmail(@Param("email") String email, @Param("password") String password);
 
-    @Query(value = "select team_name from iplfantasy_db.user_dto where email = :email", nativeQuery = true)
+    @Query(value = "select team_name from iqhyiotttzde4o5l.user_dto where email = :email", nativeQuery = true)
     String findTeamName(@Param("email") String email);
 
 

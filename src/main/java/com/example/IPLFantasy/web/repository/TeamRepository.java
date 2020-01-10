@@ -14,18 +14,23 @@ import java.util.List;
 @Repository
 @Transactional
 public interface TeamRepository extends JpaRepository<TeamDto, Integer> {
-    @Query(value = "select * FROM iplfantasy_db.team_dto where email = :email", nativeQuery = true)
+    @Query(value = "select * FROM iqhyiotttzde4o5l.team_dto where email = :email", nativeQuery = true)
     List<TeamDto> findByEmail(@Param("email") String email);
     @Modifying
 
-    @Query(value = "insert into iplfantasy_db.team_dto (id, team_name, email, name, notes, type, team) VALUES (:Id, :teamName, :email, :Name, :Notes, :type, :team)", nativeQuery = true)
+    @Query(value = "insert into iqhyiotttzde4o5l.team_dto (id, team_name, email, name, notes, type, team) VALUES (:Id, :teamName, :email, :Name, :Notes, :type, :team)", nativeQuery = true)
 
     void insertTeam(@Param("Id") Integer Id, @Param("teamName") String teamName, @Param("email") String email, @Param("Name") String Name, @Param("Notes") String Notes, @Param("type") String type, @Param("team") String team);
 
     @Modifying
-    @Query(value = "delete from iplfantasy_db.team_dto where id = :Id", nativeQuery = true)
+    @Query(value = "delete from iqhyiotttzde4o5l.team_dto where id = :Id", nativeQuery = true)
     void deleteTeam(@Param("Id") Integer Id);
 
-    @Query(value =  "select * from iplfantasy_db.team_dto where id = :Id", nativeQuery = true)
+    @Query(value =  "select * from iqhyiotttzde4o5l.team_dto where id = :Id", nativeQuery = true)
     TeamDto findId(@Param("Id") Integer Id);
+
+    @Query(value = "select DISTINCT team_name from iqhyiotttzde4o5l.team_dto", nativeQuery = true)
+    List<String> findTeam();
+    @Query(value = "select * from iqhyiotttzde4o5l.team_dto where team_name = :team_name", nativeQuery = true)
+    List<TeamDto> findByTeam(@Param("team_name") String team_name);
 }
